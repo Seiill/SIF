@@ -19,19 +19,19 @@ export const sixfeatured = [
     {
     id:"0001",
     title:"Restauración:",
-    description:"Brindamos apoyo psicosocial y lúdico-pedagógico a niños, adolescentes y jóvenes en condiciones de riesgo, promoviendo su sanación emocional y fortaleciendo sus habilidades sociales para una vida plena.",
+    description:" Acompañamos a aquellos que han experimentado profundas heridas físicas y emocionales, impactando su bienestar mental y sus conexiones personales. Trabajamos para fortalecer sus habilidades sociales y facilitar su proceso de sanación.",
     icon: iconSvg1
     },
     {
         id:"0002",
     title:"Orientación:",
-    description:"Acompañamos a niños, adolescentes y jóvenes en un proceso de desarrollo personal y emocional, ofreciendo espacios de reflexión y actividades lúdicas que les permitan encontrar esperanza y significado en sus vidas.",
+    description:"Entendemos que el maltrato, las pocas oportunidades, el abandono,  pueden dificultar los planes futuros de muchos jóvenes. Intervenimos al ofrecer orientación y apoyo integral para trazar un camino hacia un futuro más esperanzador.",
     icon: iconSvg2
     },
     {
         id:"0003",
     title:"Transformación:",
-    description:"Trabajamos en la restauración familiar a través de talleres y actividades que fomentan el diálogo y la comunicación efectiva entre padres e hijos, buscando construir relaciones armoniosas y sólidas en el hogar.",
+    description:"En Colombia se reportan más de 40,000 casos de violencia familiar, abarcan abuso sexual y físico. Estos hogares llevan a delincuencia y embarazos tempranos. Buscamos lograr la unidad familiar, previniendo desviaciones en los jóvenes y desintegración familiar.",
     icon:iconSvg3
     },
     {
@@ -43,7 +43,7 @@ export const sixfeatured = [
     {
         id:"0005",
     title:"Educación:",
-    description:"Acompañamos a niños, adolescentes y jóvenes en un proceso de desarrollo personal y emocional, ofreciendo espacios de reflexión y actividades lúdicas que les permitan encontrar esperanza y significado en sus vidas.",
+    description:"En colombia solo el 9% de los jóvenes de estratos uno y dos inician estudios superiores. Además, solo el 33% de los adolescentes completa la secundaria y 2.5 millones están fuera del sistema educativo. Abordamos la deserción con apoyo y refuerzo, promoviendo la educación como clave para un futuro prometedor.",
     icon: iconSvg5
     },
     {

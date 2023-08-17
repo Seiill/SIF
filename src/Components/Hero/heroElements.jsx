@@ -62,7 +62,7 @@ z-index: 5;
 `
 export const Text = styled.h1`
   text-align: left;
-  color: ${({ theme }) => theme.textColor};;
+  color: ${({ theme }) => theme.textColor};
   font-size: ${variables.mediumFont}
   letter-spacing: 4px;
 `;

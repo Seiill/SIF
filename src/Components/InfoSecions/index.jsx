@@ -2,7 +2,7 @@ import React,{ useEffect, useRef, useState }  from 'react'
 import images from '../../assets/IMGS/youths.png'
 import imagess from '../../assets/IMGS/imageDesc.jpg'
 import { sixfeatured, feteauredCauses, changingLifes} from '../../Util/data'
-import { Section, ImageContent,ImageDesc, Containerr, Container,Containers, Imgs, CardContent, Icon, Title,Desc, Descr, Image, Stroke, Titles, TextContainer, Shape, TextContent } from './infoElents'
+import { Section, ImageContent,ImageDesc, Containerr, Container,Containers, Imgs, CardContent, Icon, Title,TitleDesc,Desc, Descr, Image, Stroke, Titles, TextContainer, Shape, TextContent } from './infoElents'
 import {Main} from '../mainElements'
 
 const InfoSection = () => {
@@ -45,7 +45,7 @@ const InfoSection = () => {
             <CardContent ref={cardRef1} key={item.id}>
             <Icon src={item.icon} visible={isVisible1}/>
             <Stroke visible={isVisible1} />
-            <Title>{item.title}</Title>
+            <TitleDesc>{item.title}</TitleDesc>
             <Desc>{item.description}</Desc>
         </CardContent>
         ))}
@@ -71,10 +71,10 @@ const InfoSection = () => {
       </ImageContent>
       <Shape visible={isVisible2}></Shape>
       <TextContainer >
-        <Titles>Cómo estás cambiando vidas.</Titles>
+        <Titles>Juntos podemos cambiar vidas.</Titles>
         {changingLifes.map((item)=>(
         <TextContent visible={isVisible2} key={item.id}>
-            <Title inverse={true}>{item.title}</Title>
+            <Title >{item.title}</Title>
           <Descr>{item.description}</Descr>
         </TextContent>
 

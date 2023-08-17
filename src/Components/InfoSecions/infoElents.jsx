@@ -26,7 +26,8 @@ height:auto;
 `
 export const Titles = styled.h2`
 font-size: ${variables.semimediumFont};
-color: ${({ theme }) => theme.textColor};
+color: ${({ theme }) => theme.title};
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 `
 export const Section = styled.div`
 width: 100%;
@@ -87,6 +88,9 @@ animation-fill-mode: forwards;
 `
 
 export const Title = styled.h3`
+  color: ${({ theme }) => theme.textColor};
+`;
+export const TitleDesc = styled.h3`
   color: ${({ theme }) => theme.itextColor};
 `;
 export const Desc = styled.p`
