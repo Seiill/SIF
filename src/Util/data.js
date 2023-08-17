@@ -43,7 +43,7 @@ export const sixfeatured = [
     {
         id:"0005",
     title:"Educación:",
-    description:"En colombia solo el 9% de los jóvenes de estratos uno y dos inician estudios superiores. Además, solo el 33% de los adolescentes completa la secundaria y 2.5 millones están fuera del sistema educativo. Abordamos la deserción con apoyo y refuerzo, promoviendo la educación como clave para un futuro prometedor.",
+    description:"En colombia solo el 9% de los jóvenes de estratos 1 y 2 inician estudios superiores. Además, solo el 33% de los adolescentes completa la secundaria. No queremos jovenes sin educación, promovemos la educación como clave para un futuro prometedor.",
     icon: iconSvg5
     },
     {
@@ -58,33 +58,33 @@ export const feteauredCauses=[
 {
     id:"0001",
     img: infoImage3,
-    title:"Empoderamiento para el Futuro",
-    description:"Empoderamos a niños, adolescentes y jóvenes para que desarrollen todo su potencial y alcancen un futuro brillante. A través de programas lúdicos y pedagógicos, les brindamos las herramientas necesarias para superar desafíos y construir un camino hacia el éxito.",
+    title:"Brindamos Esperanza",
+    description:"Acompañamos a adolescentes que con tan solo 15 años, han intentado quitarse la vida en múltiples ocasiones debido a la ruptura familiar. Al brindarles amor, escucha y motivación, recuperan la esperanza y vuelven a soñar con un futuro. Así como ellos, muchos más necesitan nuestro apoyo.",
 },
 {
 
 id:"0002",
 img: infoImage1,
-title:"Juventud Transformadora",
-description:"Creemos en el poder transformador de la juventud. Capacitamos a los jóvenes para que se conviertan en líderes de cambio en sus comunidades, inspirando a otros a unirse en la búsqueda de un mejor futuro.",
+title:"Rescatamos niños",
+description:"Apoyamos a niños y niñas que  a sus 12 años han enfrentado el abandono parental, abusos y la pérdida de identidad, han tenido que buscar refugio en diferentes tipos de adicciones. Les ayudamos a entender  quienes son, recuperar sus sueños y romper con las adicciones, construyendo un futuro significativo.",
 },
 {
     id:"0003",
     img: infoImage2,
-title:"Unidad Familiar y Social",
-description:"trabajamos para fortalecer la unidad familiar y la convivencia armónica en la comunidad de Usme. A través de actividades conjuntas y proyectos comunitarios, fomentamos la cooperación y el apoyo mutuo, creando un entorno en el que todos puedan crecer y prosperar juntos.",
+title:"Unidad Familiar",
+description:"Las familias que atendemos no cumplen el perfil de familias perfectas. En lugar de eso, las discordias, infidelidad, alcoholismo y maltrato son frecuentes en comunidades menos privilegiadas. Sin embargo, a través del diálogo, el perdón y el acompañamiento, hemos presenciado la restauración familiar y el rescate de las generaciones venideras.",
 },
 ];
 
 export const changingLifes =[
     {
-        title:"Sanación",
-        description:"Tu contribución en SIF permite brindar un apoyo integral a niños y jóvenes en condiciones de riesgo. Proporcionamos un espacio seguro y acogedor donde pueden sanar emocionalmente y encontrar esperanza en un futuro mejor. Tu generosidad hace posible el acceso a programas lúdico-pedagógicos y actividades sociales que fortalecen su resiliencia y les ofrecen nuevas oportunidades para crecer y prosperar.",
+        title:"Tardeos",
+        description:'En ciertas áreas de Bogotá, niños a partir de los 11 años son tentados por traficantes y líderes de bandas a asistir a fiestas llamadas "tardeos", eventos que coinciden con el horario escolar. Estas festividades atraen con alcohol y drogas, desviando a los pequeños de sus clases. Muchos comienzan su adicción por un costo mínimo de entrada($3.000) o droga($1.000). Por un precio insignificante, están siendo devastados. Pero juntos, podemos rescatarlos y ofrecerles alternativas para que no caigan presa de estas circunstancias.',
         id:"0001",
     },
     {
-        title:"Empoderamiento",
-        description:"Al unirte a nuestra fundación, estás empoderando a los jóvenes con el regalo más valioso: la educación. Tu apoyo se traduce en talleres culturales, refuerzo escolar y actividades educativas que desarrollan sus habilidades académicas y blandas. Contribuyes directamente a que cada joven alcance su máximo potencial y se convierta en un líder positivo y transformador en su comunidad.",
+        title:"Realidad",
+        description:"Lamentablemente, en Colombia, millones de niños y adolescentes padecen las secuelas del maltrato familiar. Están atrapados en las redes de las drogas, víctimas del microtráfico y las pandillas, enfrentando el abandono. Muchos no llegan a la mayoría de edad y otros caen en la delincuencia por falta de oportunidades. Sin embargo, tú y yo podemos brindarles un futuro lleno de esperanza y oportunidades. Estamos trabajando para un cambio y con tu apoyo, podemos lograr mucho más.",
         id: "0002"
     }
 

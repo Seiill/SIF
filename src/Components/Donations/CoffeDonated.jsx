@@ -18,19 +18,19 @@ const CoffeDonated = () => {
                 <Icon src={icon} />
                 <Title>Café para un día</Title>
                 <Price>$10.000</Price>
-                <Button title="Donar" path="/cart"/>
+                <Button title="Comprar" path="/cart"/>
             </CardContent>
             <CardContent>
                 <Icon src={icon} />
                 <Title>Café para el mes</Title>
                 <Price>$100.000</Price>
-                <Button title="Donar" path="/cart"/>
+                <Button title="Comprar" path="/cart"/>
             </CardContent>
             <CardContent>
                 <Icon src={icon} />
                 <Title>Café para el año</Title>
                 <Price>$1.000.000</Price>
-                <Button title="Donar" path="/cart"/>
+                <Button title="Comprar" path="/cart"/>
             </CardContent>
         </Wrapper>
     </Container>

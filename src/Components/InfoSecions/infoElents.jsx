@@ -64,7 +64,7 @@ justify-content: space-around;
 
 export const CardContent = styled.div`
 display: flex;
-width: 27%;
+width: 29%;
 margin: 0.7rem auto;
 padding: 2%;
 text-align: center;
@@ -120,6 +120,7 @@ export const TextContainer = styled.div`
 width: 45%;
 display: flex;
 flex-direction: column;
+
 `
 const textContAnimation = keyframes`
 0% {
@@ -137,6 +138,7 @@ flex-direction: column;
 justify-content: center;
 animation: ${({ visible }) => (visible ? textContAnimation : 'none')} 3s ease-in-out 1;
 animation-fill-mode: forwards;
+padding: 0 0 30px 0;
 
 `
 

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export const Buttonn = styled(Link)`
   width: 200px;
-  padding: 10px;
-  font-size: 2rem;
+  padding: 10px 30px;
+  font-size: 1.5rem;
   color:  ${({ theme }) => theme.itextColor};
   background-color: ${({ theme }) => theme.card};;
   border-radius: 30px;

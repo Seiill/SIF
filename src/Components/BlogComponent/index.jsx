@@ -1,5 +1,6 @@
 import React from 'react'
 import icon1 from '../../assets/IMGS/heropng.jpg';
+import Button from '../../Components/Button/Button';
 import { SectionHistory, Article, Description, ImageWrapper, Image, Title } from './blogElements';
 import { Section, SectionWrapper, Wrapper, TextContainer, TexTitle, Description2 } from '../Programs/programsElements'
 import{ Main} from '../mainElements'
@@ -27,6 +28,7 @@ const BlogC = () => {
       <TextContainer>
         <TexTitle>¡Juntos, podemos lograrlo!</TexTitle>
         <Description2>Descubre cómo los héroes de SIF enfrentan sus luchas y encuentran la fuerza para triunfar. Juntos, podemos seguir escribiendo capítulos de esperanza y construir un futuro donde cada niño tenga la oportunidad de volar alto y ser protagonista de su propia epopeya. <b>¡Conoce más acerca de los héroes de SIF y sé parte de esta poderosa transformación!</b> </Description2>
+        <Button title="Donar" path="/coffe-gif"/>
         </TextContainer>
       </SectionWrapper>
     </Section>

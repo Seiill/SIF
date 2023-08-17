@@ -3,7 +3,8 @@ import images from '../../assets/IMGS/youths.png'
 import imagess from '../../assets/IMGS/imageDesc.jpg'
 import { sixfeatured, feteauredCauses, changingLifes} from '../../Util/data'
 import { Section, ImageContent,ImageDesc, Containerr, Container,Containers, Imgs, CardContent, Icon, Title,TitleDesc,Desc, Descr, Image, Stroke, Titles, TextContainer, Shape, TextContent } from './infoElents'
-import {Main} from '../mainElements'
+import {Main} from '../mainElements';
+import Button from '../../Components/Button/Button'
 
 const InfoSection = () => {
     const cardRef1 = useRef(null); 
@@ -71,12 +72,14 @@ const InfoSection = () => {
       </ImageContent>
       <Shape visible={isVisible2}></Shape>
       <TextContainer >
-        <Titles>Juntos podemos cambiar vidas.</Titles>
+        <Titles>Cambiemos vidas.</Titles>
         {changingLifes.map((item)=>(
         <TextContent visible={isVisible2} key={item.id}>
             <Title >{item.title}</Title>
           <Descr>{item.description}</Descr>
+          <Button title="Donar" path="/coffe-gif"/>
         </TextContent>
+        
 
           ))}
 

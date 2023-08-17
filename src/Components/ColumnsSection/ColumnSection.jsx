@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../Components/Button/Button';
 import { Container,  ImageColumn, Image, ContentColumn, Title, Description} from './elements'
 const ColumnSection = ({ data, reverse }) => {
     return (
@@ -9,6 +10,7 @@ const ColumnSection = ({ data, reverse }) => {
           <ContentColumn>
             <Title>{data.title}</Title>
             <Description>{data.description}</Description>
+            <Button title="Donar" path="/coffe-gif"/>
           </ContentColumn>
         </Container>
       );
