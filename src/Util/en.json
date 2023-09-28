@@ -1,0 +1,237 @@
+{
+    "buttonEn":{
+        "title": "Donate",
+        "title2": "Support"
+      },
+    "infoItemsEn":{"title":"Let's change lives."},
+    "footerItemsEn": {
+        "socialTitle": "Visit Us",
+        "terms": "Terms and Conditions",
+        "policy": "Privacy Policy",
+        "aboutUs": "About Us",
+        "programs": "Programs",
+        "stories": "Stories",
+        "addres": "Address",
+        "phone": "Phone",
+        "mobile": "Mobile",
+        "email": "Email"
+        },
+    "coffeItemsEn":{
+        "title":"A coffee, a Change Manager.",
+        "desc": "Your small action can make a big difference. With just the cost of a coffee, you can support our programs and be part of the change in the lives of children and youth in vulnerable situations. Donate now and be part of this beautiful symphony of transformation and hope that we create together at the SIF Foundation! Every coffee you donate is a note that builds a better future for those who need it most. <strong> Join our community of heroes and sow love and hope in hearts that long for a world full of opportunities!</strong>"
+      },
+      "coffeeOptionsEn": [
+        {
+        "id": "0001",
+        "title": "Basic coffee",
+        "price": 5.00,
+        "path": "/cart",
+        "quantity": 1
+        },
+        {
+        "id": "0002",
+        "title": "Selected coffee ",
+        "price": 25.00,
+        "path": "/cart",
+        "quantity": 1
+        },
+        {
+        "id": "0003",
+        "title": "Premium coffe",
+        "price": 300.00,
+        "path": "/cart",
+        "quantity": 1
+        }
+        ],
+    "navItemsEn":[
+        {"id": "0001", "title":"Home", "path": "/"},
+        {"id": "0002", "title":"About Us","path":"/aboutUs"},
+        {"id": "0003", "title":"Projects","path":"/programs"},
+        {"id": "0004", "title":"Blog","path":"/blog"}
+      ],
+    "newsItems":{
+        "subs": "Subscribe to our newsletter!",
+        "action": "Subscribe"
+      },
+  "homeItemsEn":{
+    "oneTitle":"Building incredible",
+    "twoTitle":"futures for extraordinary",
+    "threeTitle":"people."
+  },
+  "aboutItemsEn": {"title": "We restore lives, inspire futures!"},
+  "programsCEn": {
+    "title": "Together for a bright future!",
+    "goalText":"Annual Impact:",
+  "text": "Together, we can do it!",
+  "desc":"Each of these programs has a specific fundraising goal to achieve its implementation and ensure that we can provide the necessary support to vulnerable children and youth. Your generosity and commitment to reaching these goals will enable us to continue making a significant difference in the lives of those we serve and contribute to the positive transformation of the community.",
+  "action": "Donate"
+  },
+  
+  "sixfeaturedEn": [
+      {
+          "id": "0001",
+          "title": "Restoration:",
+          "description": "We accompany those who have experienced deep physical and emotional wounds, impacting their mental well-being and personal connections. We work to strengthen their social skills and facilitate their healing process.",
+          "icon": "restauracion.svg"
+      },
+      {
+          "id": "0002",
+          "title": "Guidance:",
+          "description": "We understand that abuse, limited opportunities, and abandonment can hinder the future plans of many young people. We intervene by offering comprehensive guidance and support to chart a path toward a more hopeful future.",
+          "icon": "orientacion.svg"
+      },
+      {
+          "id": "0003",
+          "title": "Transformation:",
+          "description": "In Colombia, over 40,000 cases of family violence are reported, including sexual and physical abuse. These households lead to delinquency and early pregnancies. We seek to achieve family unity, preventing youth deviations and family disintegration.",
+          "icon": "Transformacion.svg"
+      },
+      {
+          "id": "0004",
+          "title": "Leadership:",
+          "description": "We aim to empower young people as leaders in their communities, offering them opportunities to develop leadership skills and actively participate in the positive transformation of their surroundings.",
+          "icon": "liderazgo.svg"
+      },
+      {
+          "id": "0005",
+          "title": "Education:",
+          "description": "In Colombia, only 9% of youth from strata 1 and 2 begin higher education. Furthermore, only 33% of adolescents complete secondary school. We don't want young people without education; we promote education as the key to a promising future.",
+          "icon": "educacion.svg"
+      },
+      {
+          "id": "0006",
+          "title": "Commitment:",
+          "description": "We work together with schools, community dining rooms, and other local stakeholders to identify needs and establish agreements that expand our impact, bringing hope and opportunities to more people.",
+          "icon": "compromiso.svg"
+      }
+  ],
+  "feteauredCausesEn": [
+      {
+          "id": "0001",
+          "img": "empoderados.jpg",
+          "title": "We Provide Hope",
+          "description": "We accompany teenagers who, at just 15 years old, have attempted suicide multiple times due to family breakdown. By providing them with love, listening, and motivation, they regain hope and dream of a future. Just like them, many more need our support."
+      },
+      {
+          "id": "0002",
+          "img": "transformadores.jpg",
+          "title": "We Rescue Children",
+          "description": "We support boys and girls who, at the age of 12, have faced parental abandonment, abuse, and loss of identity, and have had to seek refuge in various types of addictions. We help them understand who they are, recover their dreams, and break free from addiction, building a meaningful future."
+      },
+      {
+          "id": "0003",
+          "img": "unidadFamiliar.jpg",
+          "title": "Family Unity",
+          "description": "The families we serve do not fit the profile of perfect families. Instead, discord, infidelity, alcoholism, and abuse are common in less privileged communities. However, through dialogue, forgiveness, and support, we have witnessed family restoration and the rescue of future generations."
+      }
+  ],
+  "changingLifesEn": [
+      {
+          "id":"0001",
+          "title": "Tardeos",
+          "description": "In certain areas of Bogotá, children as young as 11 are tempted by traffickers and gang leaders to attend parties called 'Tardeos' which coincide with school hours. These festivities lure them with alcohol and drugs, diverting them from their classes. Many start their addiction for a minimal cost of entry (0,76 USD) or drugs (0,25 USD). For a negligible price, they are being devastated. But together, we can rescue them and offer alternatives so they don't fall prey to these circumstances.",
+          "action":"Support"
+      },
+      {
+          "id":"0002",
+          "title": "Reality",
+          "description": "Unfortunately, in Colombia, millions of children and adolescents suffer the consequences of family abuse. They are trapped in the networks of drugs, victims of microtrafficking and gangs, facing abandonment. Many do not reach adulthood, and others fall into delinquency due to lack of opportunities. However, you and I can provide them with a future full of hope and opportunities. We are working for change, and with your support, we can achieve much more.",
+          "action":"Support"
+      }
+  ],
+  "programsDonationEn": [
+      {
+          "id": "0001",
+          "img": "pD1.jpeg",
+          "alt": "Generations-in-Movement",
+          "title": "Generations in Movement",
+          "description": "A vibrant program that offers entertainment and development spaces for children and adolescents through cultural and artistic events and activities. We aim to rescue and guide talented youth, preventing drug addiction and teenage pregnancy. We grow together, creating memorable moments and bright futures!"
+      },
+      {
+          "id": "0002",
+          "img": "pD2.jpg",
+          "alt": "Individual Sponsorship",
+          "title": "Individual Sponsorship",
+          "description": "Become a personal support for a child or young person at SIF through our sponsorship program. Your monthly or annual donation will help cover their basic needs such as food, education, and medical care. You will provide the unique opportunity for them to feel loved and protected, creating a meaningful bond that will transform their lives."
+      },
+      {
+          "id": "0003",
+          "img": "pD3.jpeg",
+          "alt": "",
+          "title": "Education and Development",
+          "description": "Contribute to the comprehensive development of children and young people at SIF through our scholarship and workshop program. Your donation will strengthen education, provide educational materials, and facilitate playful and cultural workshops. With your support, we prevent them from falling into gang activities and delinquency, building a bright future full of possibilities for each beneficiary."
+      },
+      {
+          "id": "0004",
+          "img": "pD4.jpeg",
+          "alt": "",
+          "title": "Family Restoration",
+          "description": "Join our family restoration program and support the transformation of vulnerable households. Your donation will contribute to providing advice and support to parents and caregivers, strengthening emotional bonds, and providing tools to improve family life. By investing in family restoration, you will positively impact the emotional and social well-being of the children and young people we serve."
+      }
+  ],
+  "blogPage": [
+      {
+          "title": "Bee Brave",
+          "subtitle": "The Brave Heroine of Transformation",
+          "text": "Deep within the shadows, where pain and uncertainty dance in a cruel symphony...",
+          "callToaction": "We invite you to be part of these stories of courage and resilience..."
+      }
+  ],
+  "coffe": [
+      {
+          "title": "Give a Coffee",
+          "subtitle": "One Coffee, One Change Maker",
+          "description": "Your small action can make a big difference. For the cost of a coffee, you can support our programs and be part of the change in the lives of vulnerable children and young people. Donate now and be part of this beautiful symphony of transformation and hope that we create together at the SIF Foundation! Every coffee you donate is a note that builds a better future for those who need it most. Join our community of heroes and sow love and hope in hearts longing for a world full of opportunities!"
+      }
+  ],
+  "columnData1En": {
+      "image": "sinlucro.jpeg",
+      "title": "Nonprofit Organization",
+      "description": "We take pride in being a nonprofit organization dedicated to the emotional, social, and integral restoration of children, adolescents, and young people at risk of sexual abuse, physical abuse, drug use, or abandonment. Our mission is to provide comprehensive support so they can overcome the challenges they face and develop a healthy and fulfilling life project."
+  },
+  "columnData2En": {
+      "image": "forte.jpeg",
+      "title": "We Are a Strong Team",
+      "description": "We are a united and passionate team working together to make a significant difference in the lives of the children and young people we serve. Our team consists of committed professionals, dedicated volunteers, and supportive collaborators, all driven by a common purpose: to provide support, restore lives, and inspire futures. Our strength lies in empathy, resilience, and commitment to the cause that unites us. Each of us contributes our skills and talents to achieve transformative impact and create a safe and hopeful environment for those who need it most. Together, we are a strong team moving forward with determination toward a common goal: to generate positive and lasting change in the lives of those we serve."
+  },
+  "columnData3En": {
+      "image": "unete.jpeg",
+      "title": "Join Our Cause",
+      "description": "We invite you to join our mission of restoration and transformation. Every contribution, every act of solidarity, is a seed of hope that sows a brighter future for the young people we serve. Together, we can achieve profound change and make a difference in the lives of those who need it most. Your support is invaluable to us!",
+      "action":"Donate"
+  },
+  "misonVisionEn": [
+      {
+          "id": "0001",
+          "title": "Mission",
+          "subtitle": "Restoring Lives",
+          "description": "We are committed to the comprehensive restoration of children, adolescents, and young people at risk of sexual abuse, physical abuse, drug use, or abandonment. Our mission is to provide comprehensive support so they can overcome the challenges they face and develop a healthy and fulfilling life project."
+      },
+      {
+          "id": "0002",
+          "title": "Vision",
+          "subtitle": "Transforming Communities",
+          "description": "We extend our work nationally. We aim to be recognized as leaders in providing comprehensive support to children and young people in situations of vulnerability. With the support of our donors and collaborators, we aspire to be catalysts for transformation in society."
+      },
+      {
+          "id": "0003",
+          "title": "Purpose",
+          "subtitle": "Profound Change",
+          "description": "We work tirelessly to build bridges of restoration and dialogue within families, strengthening bonds and creating a safe environment for personal growth and social development."
+      }
+  ],
+  "blogDataEn": {
+    "title": "Bee Brave",
+    "description": [
+    "The Courageous Heroine of Transformation",
+    "Deep within the shadows, where pain and uncertainty dance in a cruel symphony, resides a courageous heroine named Bee Brave. At just 12 years old, she has faced more adversity than any young soul should bear. Her parents, trapped in a destructive cycle of fights and lovelessness, have been silent witnesses to her suffering from her tenderest years. But amidst the darkness, Bee Brave found refuge in a bleak and perilous world: drugs and physical pain.",
+    "However, one day, a ray of hope lit her path. She encountered the SIF Foundation, where anonymous heroes dedicated to changing lives extended their compassionate hand to her. From that moment, Bee Brave's story changed forever. The warm embrace of psychological support showed her a new perspective, an image of herself that shone with courage and strength.",
+    "With each step, Bee Brave began to heal, to restore her self-perception, and to break free from the shackles of addiction. She discovered that within her heart lay powerful dreams and aspirations, a whole life to live, though at one point she believed she had no reason to do so. She clung to the opportunity for rebirth, to write a new story filled with hope and fulfillment. Every day, she held tighter to her dreams: to be a dancer and actress, or perhaps a lawyer to advocate for the rights of those who need a voice.",
+    "The story you've read is real, lived by one of our girls at SIF. Like her, there are many struggling and losing themselves in a dark world. With your support, we can continue and reach many more who need help. Together, we can make a difference and build a brighter future for them."
+    ],
+    "txtTitle": "Together, We Can Achieve It!",
+    "txtDesc": "Discover how the heroes of SIF face their struggles and find the strength to triumph. Together, we can continue writing chapters of hope and build a future where every child has the opportunity to soar high and be the protagonist of their own epic journey. <strong>Learn more about the heroes of SIF and be a part of this powerful transformation!</strong>",
+    "action": "Donate"
+    }
+        
+}

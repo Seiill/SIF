@@ -1,16 +1,32 @@
 import React from 'react';
 import Button from '../../Components/Button/Button';
 import { Container,  ImageColumn, Image, ContentColumn, Title, Description} from './elements'
-const ColumnSection = ({ data, reverse }) => {
+import columnImage1 from '../../Assets/IMGS/sinlucro.jpeg';
+import columnImage2 from '../../Assets/IMGS/forte.jpeg';
+import columnImage3 from '../../Assets/IMGS/unete.jpeg';
+const loadImage = (imageName) => {
+  switch (imageName) {
+    case 'sinlucro.jpeg':
+      return columnImage1;
+    case 'forte.jpeg':
+      return columnImage2;
+    case 'unete.jpeg':
+      return columnImage3;
+    default:
+      return null;}}
+const ColumnSection = ({ data, reverse, showButton, actions }) => {
     return (
-        <Container reverse={reverse}>
+        <Container $reverse={reverse}>
           <ImageColumn>
-            <Image src={data.image} alt={data.title} />
+            <Image src={loadImage(data.image)} alt={data.title} />
           </ImageColumn>
           <ContentColumn>
             <Title>{data.title}</Title>
+
+
             <Description>{data.description}</Description>
-            <Button title="Donar" path="/coffe-gif"/>
+            {showButton && <Button title={actions} path="/coffe-gif" />}
+            
           </ContentColumn>
         </Container>
       );

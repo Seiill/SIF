@@ -1,13 +1,12 @@
-import React from 'react'
-import CoffeDonated from '../Components/Donations/CoffeDonated'
-
+import React from 'react';
+import CoffeDonated from '../Components/Donations/CoffeDonated';
 const CoffeGif = () => {
+  
   return (
-    
     <>
-    <CoffeDonated/>
+        <CoffeDonated />
     </>
-  )
-}
+  );
+};
 
-export default CoffeGif
+export default CoffeGif;

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Buttonn } from './buttonElements'
-const Button = ({title, path}) => {
+const Button = ({title, path, e}) => {
   return (
-    <Buttonn to={path}>
+    <Buttonn to={path} onClick={e}>
         {title}
     </Buttonn>
   )

@@ -9,7 +9,6 @@ export const Container = styled.div`
 display: flex;
 width: 100%;
 justify-content: space-around;
-alignItems: center;
 flex-direction:row;
 flex-wrap: wrap;
 background-color:  ${({ theme }) => theme.itextColor};

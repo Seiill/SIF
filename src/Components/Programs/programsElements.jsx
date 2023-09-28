@@ -53,12 +53,14 @@ width: 35%;
 background-color: ${({ theme }) => theme.card};
 padding: ${variables.smallFont};
 justify-content: space-between;
+border-radius: 20px;
 `
 
 export const Imgs = styled.img`
 width: 100%;
 height: 300px;
 object-fit: cover;
+border-radius: 10px;
 ` 
 export const Title = styled.h2`
 color: ${({ theme }) => theme.itextColor};

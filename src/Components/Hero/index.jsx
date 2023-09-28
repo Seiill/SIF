@@ -1,11 +1,19 @@
 import React,{ useEffect, useRef } from 'react'
+import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+
+
 import icon from '../../assets/IMGS/niño.png'
 import icon2 from '../../assets/IMGS/absOne.png'
 import icon3 from '../../assets/IMGS/abs2.png'
 import icon4 from '../../assets/IMGS/abs3.png'
-import { Container, ImgOne, ImgTwo, Image, ImgThree,TextContainer,Text, SpanText  } from './heroElements';
+import {homeItems} from '../../Util/es.json'
+import {homeItemsEn} from '../../Util/en.json'
+import { Container, ImgOne, ImgTwo, Image, ImgThree,TextContainer,Text, SpanText, SpanOption  } from './heroElements';
 
-const Hero = () => {
+const Hero = ({ t }) => {
+  const {i18n} = useTranslation();
+  
   const imgOneRef = useRef(null);
   const imgTwoRef = useRef(null);
   const imgThreeRef = useRef(null);
@@ -21,8 +29,8 @@ const Hero = () => {
     });
       imgOneRef.current.style.transform = `translateY(${scroll * 0.4}px)`;
       imgTwoRef.current.style.transform = `translateY(${scroll * 0.2}px)`;
-      imgThreeRef.current.style.transform = `translateY(${scroll * 0.1}px)`;
-      imageRef.current.style.transform = `translateY(${scroll * 0.3}px)`;
+      imgThreeRef.current.style.transform = `translateY(${scroll * 0.6}px)`;
+      imageRef.current.style.transform = `translateY(${scroll * 0.4}px)`;
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -32,6 +40,11 @@ const Hero = () => {
     };
   }, []);
 
+  const currentLanguage = i18n.language;
+
+  const items = currentLanguage === 'es' ? homeItems : homeItemsEn;
+
+
   return (
     <>
       <Container>
@@ -40,9 +53,10 @@ const Hero = () => {
         <ImgThree ref={imgThreeRef} src={icon4} />
         <TextContainer>
           <Text>
-            Construyendo Futuros increibles para personas
+            <SpanOption $textspacing="6px">{t(items.oneTitle)}
+             </SpanOption> <SpanOption $textspacing="3px">{t(items.twoTitle)}</SpanOption> 
             <br />
-            <SpanText>extraordinarias</SpanText>
+            <SpanText>{t(items.threeTitle)}</SpanText>
           </Text>
         </TextContainer>
 
@@ -52,4 +66,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default withTranslation()(Hero);

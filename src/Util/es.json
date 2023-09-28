@@ -1,0 +1,250 @@
+ {
+  "buttonEs":{
+    "title":"Donar",
+    "title2": "Apoyar"
+  },
+  "infoItems":{"title":"Cambiemos vidas."},
+  "footerItems":{
+    "socialTitle":"Visitanos",
+    "terms": "Terminos y condiciones",
+    "policy":"Políticas de privacidad",
+    "aboutUs": "Nosotros",
+    "programs": "Programas",
+    "stories": "Historias",
+    "addres": "Dirección",
+    "phone": "Teléfono",
+    "mobile": "Celular",
+    "email": "Correo"
+  },
+  "coffeItems":{
+    "title":"Un Café, un Gestor de Cambios",
+    "desc": "Tu pequeña acción puede marcar una gran diferencia. Con solo el costo de un café, puedes apoyar nuestros programas y ser parte del cambio en la vida de niños y jóvenes en situaciones de vulnerabilidad. ¡Dona ahora y forma parte de esta hermosa sinfonía de transformación y esperanza que juntos creamos en la Fundación SIF! Cada café que donas es una nota que construye un futuro mejor para aquellos que más lo necesitan. <strong>¡Únete a nuestra comunidad de héroes y siembra amor y esperanza en corazones que anhelan un mundo lleno de oportunidades!<strong>"
+  },
+ "coffeeOptions": [
+    {
+      "id": "0001",
+      "title": "Café del día",
+      "price": 10000,
+      "path": "/cart",
+      "quantity": 1
+    },
+    {
+      "id": "0002",
+      "title": "Café del mes",
+      "price": 100000,
+      "path": "/cart",
+      "quantity": 1
+    },
+    {
+      "id": "0003",
+      "title": "Café del año",
+      "price": 1000000,
+      "path": "/cart",
+      "quantity": 1
+    }
+  ],
+  "navItemsEs":[
+    {"id": "0001", "title":"Inicio", "path": "/"},
+    {"id": "0002", "title":"Nosotros","path":"/aboutUs"},
+    {"id": "0003", "title":"Programas","path":"/programs"},
+    {"id": "0004", "title":"Blog","path":"/blog"}
+  ],
+  "newsItems":{
+    "subs": "¡Suscríbete a nuestro boletín!",
+    "action": "Suscribirse"
+  },
+  "homeItems":{
+    "oneTitle":"Construyendo futuros",
+    "twoTitle":"increibles para personas",
+    "threeTitle":"extraordinarias"
+  },
+  "aboutItems": 
+      {"title": "¡Restauramos vidas, inspiramos futuros!"},
+    "programsC":
+    {"title": "¡Juntos por un futuro brillante!",
+    "goalText":"Meta anual:",
+    
+    "text": "¡Juntos, podemos lograrlo!",
+    "desc":"Cada uno de estos programas tiene una meta de recaudación específica para lograr su implementación y asegurar que podamos brindar el apoyo necesario a los niños y jóvenes en situación de vulnerabilidad. Tu generosidad y compromiso en alcanzar estas metas nos permitirán seguir marcando una diferencia significativa en la vida de quienes atendemos y contribuir a la transformación positiva de la comunidad. ",
+    "action": "Donar"
+  },
+    
+    "sixfeatured": [
+      {
+        "id": "0001",
+        "title": "Restauración:",
+        "description": "Acompañamos a aquellos que han experimentado profundas heridas físicas y emocionales, impactando su bienestar mental y sus conexiones personales. Trabajamos para fortalecer sus habilidades sociales y facilitar su proceso de sanación.",
+        "icon": "restauracion.svg"
+      },
+      {
+        "id": "0002",
+        "title": "Orientación:",
+        "description": "Entendemos que el maltrato, las pocas oportunidades, el abandono,  pueden dificultar los planes futuros de muchos jóvenes. Intervenimos al ofrecer orientación y apoyo integral para trazar un camino hacia un futuro más esperanzador.",
+        "icon": "orientacion.svg"
+      },
+      {
+        "id": "0003",
+        "title": "Transformación:",
+        "description": "En Colombia se reportan más de 40,000 casos de violencia familiar, abarcan abuso sexual y físico. Estos hogares llevan a delincuencia y embarazos tempranos. Buscamos lograr la unidad familiar, previniendo desviaciones en los jóvenes y desintegración familiar.",
+        "icon": "Transformacion.svg"
+      },
+      {
+        "id": "0004",
+        "title": "Liderazgo:",
+        "description": "Buscamos empoderar a los jóvenes como líderes en sus comunidades, ofreciéndoles oportunidades para desarrollar habilidades de liderazgo y participar activamente en la transformación positiva de su entorno.",
+        "icon": "liderazgo.svg"
+      },
+      {
+        "id": "0005",
+        "title": "Educación:",
+        "description": "En colombia solo el 9% de los jóvenes de estratos 1 y 2 inician estudios superiores. Además, solo el 33% de los adolescentes completa la secundaria. Promovemos la educación como clave para un futuro prometedor.",
+        "icon": "educacion.svg"
+      },
+      {
+        "id": "0006",
+        "title": "Compromiso:",
+        "description": "Trabajamos en conjunto con colegios, comedores comunitarios y otros actores locales para identificar necesidades y establecer convenios que amplíen nuestro impacto, llevando esperanza y oportunidades a más personas.",
+        "icon": "compromiso.svg"
+      }
+    ],
+    "feteauredCauses": [
+      {
+        "id": "0001",
+        "img": "empoderados.jpg",
+        "title": "Brindamos Esperanza",
+        "description": "Acompañamos a adolescentes que con tan solo 15 años, han intentado quitarse la vida en múltiples ocasiones debido a la ruptura familiar. Al brindarles amor, escucha y motivación, recuperan la esperanza y vuelven a soñar con un futuro. Así como ellos, muchos más necesitan nuestro apoyo."
+      },
+      {
+        "id": "0002",
+        "img": "transformadores.jpg",
+        "title": "Rescatamos niños",
+        "description": "Apoyamos a niños y niñas que  a sus 12 años han enfrentado el abandono parental, abusos y la pérdida de identidad, han tenido que buscar refugio en diferentes tipos de adicciones. Les ayudamos a entender  quienes son, recuperar sus sueños y romper con las adicciones, construyendo un futuro significativo."
+      },
+      {
+        "id": "0003",
+        "img": "unidadFamiliar.jpg",
+        "title": "Unidad Familiar",
+        "description": "Las familias que atendemos no cumplen el perfil de familias perfectas. En lugar de eso, las discordias, infidelidad, alcoholismo y maltrato son frecuentes en comunidades menos privilegiadas. Sin embargo, a través del diálogo, el perdón y el acompañamiento, hemos presenciado la restauración familiar y el rescate de las generaciones venideras."
+      }
+    ],
+    "changingLifes": [
+      {
+        "title": "Tardeos",
+        "description": "En ciertas áreas de Bogotá, niños a partir de los 11 años son tentados por traficantes y líderes de bandas a asistir a fiestas llamadas tardeos, eventos que coinciden con el horario escolar. Estas festividades atraen con alcohol y drogas, desviando a los pequeños de sus clases. Muchos comienzan su adicción por un costo mínimo de entrada($3.000) o droga($1.000). Por un precio insignificante, están siendo devastados. Pero juntos, podemos rescatarlos y ofrecerles alternativas para que no caigan presa de estas circunstancias.",
+        "action":"Apoyar",
+        "id": "0001"
+      },
+      {
+        "title": "Realidad",
+        "description": "Lamentablemente, en Colombia, millones de niños y adolescentes padecen las secuelas del maltrato familiar. Están atrapados en las redes de las drogas, víctimas del microtráfico y las pandillas, enfrentando el abandono. Muchos no llegan a la mayoría de edad y otros caen en la delincuencia por falta de oportunidades. Sin embargo, tú y yo podemos brindarles un futuro lleno de esperanza y oportunidades. Estamos trabajando para un cambio y con tu apoyo, podemos lograr mucho más.",
+        "action":"Apoyar",
+        "id": "0002"
+      }
+    ],
+    "programsDonation": [
+      {
+        "id": "0001",
+        "img": "pD1.jpeg",
+        "alt": "Generaciones-en-Movimiento",
+        "title": "Generaciones en Movimiento",
+        "description": "Un programa vibrante que ofrece espacios de entretenimiento y desarrollo a niños y adolescentes mediante eventos y actividades culturales y artísticas. Buscamos rescatar y guiar a jóvenes con talento, previniendo la drogadicción y el embarazo adolescente. ¡Crecemos juntos, creando momentos memorables y futuros brillantes!",
+        "goal": "300"
+      },
+      {
+        "id": "0002",
+        "img": "pD2.jpg",
+        "alt": "Apadrinamiento-Individual",
+        "title": "Apadrinamiento Individual",
+        "description": "Conviértete en un apoyo personal para un niño o joven en SIF a través de nuestro programa de apadrinamiento. Tu donación mensual o anual contribuirá a cubrir sus necesidades básicas como alimentación, educación y atención médica. Brindarás la oportunidad única de que se sientan amados y protegidos, creando un vínculo significativo que transformará sus vidas.",
+        "goal": "300"
+      },
+      {
+        "id": "0003",
+        "img": "pD3.jpeg",
+        "alt": "",
+        "title": "Educación y Desarrollo",
+        "description": "Contribuye al desarrollo integral de niños y jóvenes en SIF a través de nuestro programa de becas y talleres. Tu donación fortalecerá la educación, proveerá material didáctico y facilitará talleres lúdicos y culturales. Con tu apoyo, evitamos que caigan en el pandillismo y delincuencia, construyendo un futuro brillante lleno de posibilidades para cada beneficiario. ",
+        "goal": "300"
+      },
+      {
+        "id": "0004",
+        "img": "pD4.jpeg",
+        "alt": "",
+        "title": "Restauración Familiar",
+        
+        "description": "Únete a nuestro programa de restauración familiar y apoya la transformación de hogares en situaciones vulnerables. Tu donación contribuirá a ofrecer asesoría y acompañamiento a padres y cuidadores, fortaleciendo lazos afectivos y brindando herramientas para mejorar la convivencia familiar. Al invertir en la restauración de familias, estarás impactando positivamente en el bienestar emocional y social de los niños y jóvenes que atendemos.",
+
+        "closed": "Cada uno de estos programas de donación está diseñado para marcar una diferencia significativa en la vida de los beneficiarios y en la comunidad en general. Tu generosidad será el motor que impulse el cambio y la esperanza en la vida de quienes más lo necesitan. ¡Gracias por ser parte de nuestra misión transformadora en SIF!",
+        "goal": "500"
+      }
+    ],
+    "blogPage": [
+      {
+        "title": "Bee Brave",
+        "subtitle": "La Valiente Heroína de la Transformación",
+        "text": "En lo profundo de las sombras, donde el dolor y la incertidumbre danzan en una cruel sinfonía...",
+        "callToaction": "Te invitamos a ser parte de estas historias de valor y resiliencia...",
+        "img": "",
+        "alt": "bee-Brave-heroine"
+      }
+    ],
+    "coffe": [
+      {
+        "title": "Regala un café",
+        "subtitle": "Un Café, un Gestor de Cambios",
+        "description": "Tu pequeña acción puede marcar una gran diferencia. Con solo el costo de un café, puedes apoyar nuestros programas y ser parte del cambio en la vida de niños y jóvenes en situaciones de vulnerabilidad. ¡Dona ahora y forma parte de esta hermosa sinfonía de transformación y esperanza que juntos creamos en la Fundación SIF! Cada café que donas es una nota que construye un futuro mejor para aquellos que más lo necesitan. ¡Únete a nuestra comunidad de héroes y siembra amor y esperanza en corazones que anhelan un mundo lleno de oportunidades!",
+        "img": "",
+        "alt": "coffee-donation"
+      }
+    ],
+    "columnData1": {
+      "image": "sinlucro.jpeg",
+      "title": "Organización sin Fines de Lucro.",
+      "description": "Nos enorgullecemos de ser una organización sin fines de lucro dedicada a la restauración emocional, social e integral de niños, niñas, adolescentes y jóvenes en condiciones de riesgo. Nuestra misión es brindar apoyo psicosocial y espiritual, impulsar proyectos de vida sanos e integrales, y contribuir a la restauración familiar. Cada donativo y colaboración que recibimos se invierte directamente en nuestros programas para generar un impacto positivo y duradero en la vida de quienes atendemos. Trabajamos con pasión y compromiso para crear un cambio trascendental en la comunidad y ser agentes de esperanza para un futuro mejor."
+    },
+    "columnData2": {
+      "image": "forte.jpeg",
+      "title": "Somos un Equipo Fuerte.",
+      "description": "Formamos un equipo unido y apasionado que trabaja en conjunto para marcar una diferencia significativa en la vida de los niños y jóvenes que atendemos. Nuestro equipo está conformado por profesionales comprometidos, voluntarios dedicados y colaboradores solidarios, todos impulsados por un propósito común: brindar apoyo, restaurar vidas e inspirar futuros. Nuestra fuerza radica en la empatía, resiliencia y compromiso con la causa que nos une. Cada uno de nosotros aporta sus habilidades y talentos para lograr un impacto transformador y construir un entorno seguro y esperanzador para aquellos que más lo necesitan. Juntos, somos un equipo fuerte que avanza con determinación hacia un objetivo común: generar un cambio positivo y duradero en la vida de quienes atendemos."
+    },
+    "columnData3": {
+      "image": "unete.jpeg",
+      "title": "Únete a Nuestra Causa",
+      "description": "Te invitamos a unirte a nuestra misión de restauración y transformación. Cada contribución, cada acción solidaria, es una semilla de esperanza que siembra un futuro más brillante para los jóvenes que atendemos. Juntos, podemos lograr un cambio trascendental y marcar la diferencia en la vida de aquellos que más lo necesitan. ¡Tu apoyo es invaluable para nosotros!",
+      "action":"Donar"
+    },
+    "misonVision": [
+      {
+        "id":"0001",
+        "title": "Misión",
+        "subtitle": "Restaurar Vidas",
+        "description": "Estamos comprometidos con la restauración integral de niños, niñas, adolescentes y jóvenes en condiciones de riesgo de abuso sexual, maltrato físico, consumo de drogas o estado de abandono. Nuestra misión es brindar un apoyo integral, para que puedan superar los desafíos que enfrentan y desarrollar un proyecto de vida sano y pleno."
+      },
+      {
+        "id":"0002",
+        "title": "Visión",
+        "subtitle": "Transformar Comunidades",
+        "description": "Extender nuestra labor a nivel nacional. Buscamos ser reconocidos como líderes en el apoyo integral a niños y jóvenes en situación de vulnerabilidad. Con el apoyo de nuestros donantes y colaboradores, aspiramos a ser catalizadores de transformación en la sociedad."
+      },
+      {
+        "id":"0003",
+        "title": "Propósito",
+        "subtitle": "Un Cambio Trascendental",
+        "description": "Trabajamos arduamente para construir puentes de restauración y diálogo en el núcleo familiar, fortaleciendo los lazos y creando un entorno seguro para el crecimiento personal y el desarrollo social."
+      }
+    ],
+    "blogData": {
+      "title": "Bee Brave",
+      "description": [
+        "La Valiente Heroína de la Transformación",
+        "En lo profundo de las sombras, donde el dolor y la incertidumbre danzan en una cruel sinfonía, se encuentra una valiente heroína llamada Bee Brave. Con tan solo 12 años, ha enfrentado más adversidades de las que cualquier alma joven debería soportar. Sus padres, prisioneros de un ciclo destructivo de peleas y desamor, han sido los testigos silenciosos de su sufrimiento desde su más tierna infancia. Pero en medio de la oscuridad, Bee Brave encontró el refugio en un mundo sombrío y peligroso: las drogas y el dolor físico.",
+        "Sin embargo, un día, un rayo de esperanza iluminó su camino. Conoció a la Fundación SIF, donde los héroes anónimos dedicados a cambiar vidas extendieron su mano compasiva hacia ella. Desde ese momento, la historia de Bee Brave cambió para siempre. El abrazo cálido de la ayuda psicológica le mostró una nueva perspectiva, una imagen de sí misma que brillaba con valentía y fuerza.",
+        "Con cada paso, Bee Brave comenzó a sanar, a restaurar su autopercepción y a liberarse del yugo de la adicción. Descubrió que dentro de su corazón había sueños y anhelos poderosos, una vida entera por vivir, aunque en un momento creyó que no tenía motivos para hacerlo. Se aferró a la oportunidad de renacer, de escribir una nueva historia llena de esperanza y realización.Cada día, se aferraba más a sus sueños: ser bailarina y actriz, o quizás una abogada para defender los derechos de aquellos que necesitan una voz.",
+        "La historia que has leído es real, vivida por una de nuestras niñas en SIF. Como ella, hay muchos luchando y perdiéndose en un mundo oscuro. Con tu apoyo, podemos continuar y llegar a muchos más que necesitan ayuda. Juntos, podemos marcar la diferencia y construir un futuro mejor para ellos."
+      ],
+      "txtTitle":"¡Juntos, podemos lograrlo!",
+      "txtDesc":"Descubre cómo los héroes de SIF enfrentan sus luchas y encuentran la fuerza para triunfar. Juntos, podemos seguir escribiendo capítulos de esperanza y construir un futuro donde cada niño tenga la oportunidad de volar alto y ser protagonista de su propia epopeya. <strong>¡Conoce más acerca de los héroes de SIF y sé parte de esta poderosa transformación!</strong>",
+      "action": "Donar"
+      
+  }}
+  

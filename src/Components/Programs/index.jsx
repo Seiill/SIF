@@ -1,9 +1,33 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect, useState} from 'react';
+import { withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'; 
 import Button from '../../Components/Button/Button';
 import { ParallaxBackground, ParallaxWrapper, ParallaxContent , Section, Container, CardContainer, Imgs, Title, Description, Description2, Goal, Wrapper, TextContainer, TexTitle, SectionWrapper } from './programsElements'
-import { programsDonation } from '../../Util/data';
+import {programsC, programsDonation } from '../../Util/es.json';
+import {programsCEn, programsDonationEn } from '../../Util/en.json';
 import {Main} from '../mainElements'
-const Programas = () => {
+
+import pd1 from "../../Assets/IMGS/pD1.jpeg";
+import pd2 from "../../Assets/IMGS/pD2.jpg";  
+import pd3 from "../../Assets/IMGS/pD3.jpeg"; 
+import pd4 from '../../Assets/IMGS/pD4.jpeg';
+const Programas = ({ t }) => {
+  const { i18n} = useTranslation();
+  const currentLanguage = i18n.language;
+  const data = currentLanguage === 'es' ? { programsC, programsDonation } : { programsC: programsCEn, programsDonation: programsDonationEn };
+
+  const loadImage = (imageName) => {
+    switch (imageName) {
+      case 'pD1.jpeg':
+        return pd1;
+      case 'pD2.jpg':
+        return pd2;
+      case 'pD3.jpeg':
+        return pd3;
+      case 'pD4.jpeg':
+        return pd4;
+      default:
+        return null;}}
     const [scrollOffset, setScrollOffset] = useState(0);
 
   useEffect(() => {
@@ -22,17 +46,17 @@ const Programas = () => {
     <ParallaxWrapper>
       <ParallaxBackground offset={scrollOffset} />
       <ParallaxContent>
-        ¡Juntos por un futuro brillante!
+        {t(data.programsC.title)}
       </ParallaxContent>
     </ParallaxWrapper>
     <Section>
       <Container>
-        {programsDonation.map((item)=>(
+        {data.programsDonation.map((item)=>(
           <CardContainer key={item.id}>
-          <Imgs src={item.img} alt={item. title}/>
-          <Title>{item.title}</Title>
-          <Description>{item.description}</Description>
-          <Goal>meta anual: {item.goal}</Goal>
+          <Imgs src={loadImage(item.img)} alt={item. title}/>
+          <Title>{t(item.title)}</Title>
+          <Description>{t(item.description)}</Description>
+          <Goal>{t(data.programsC.goalText)} {item.goal}</Goal>
         </CardContainer>
         ))}
       </Container>
@@ -43,9 +67,9 @@ const Programas = () => {
         
       </Wrapper>
       <TextContainer>
-        <TexTitle>¡Juntos, podemos lograrlo!</TexTitle>
-        <Description2>Cada uno de estos programas tiene una meta de recaudación específica para lograr su implementación y asegurar que podamos brindar el apoyo necesario a los niños y jóvenes en situación de vulnerabilidad. Tu generosidad y compromiso en alcanzar estas metas nos permitirán seguir marcando una diferencia significativa en la vida de quienes atendemos y contribuir a la transformación positiva de la comunidad. </Description2>
-        <Button title="Donar" path="/coffe-gif"/>
+        <TexTitle>{t(data.programsC.text)}</TexTitle>
+        <Description2>{t(data.programsC.desc)}</Description2>
+        <Button title={t(data.programsC.action)} path="/coffe-gif"/>
         </TextContainer>
         
       </SectionWrapper>
@@ -54,4 +78,4 @@ const Programas = () => {
   )
 }
 
-export default Programas
+export default withTranslation()(Programas)

@@ -57,17 +57,19 @@ top: 250px;
 position: relative;
 margin-left: 50px;
 z-index: 5;
-
-}
 `
+
 export const Text = styled.h1`
   text-align: left;
   color: ${({ theme }) => theme.textColor};
-  font-size: ${variables.mediumFont}
-  letter-spacing: 4px;
+  font-size: ${variables.mediumFont};
+  letter-spacing: 3.5px;
 `;
 
 export const SpanText = styled.span`
   font-size: ${variables.bigFont}; 
   color:  ${({ theme }) => theme.title};
 `;
+export const SpanOption = styled.span`
+letter-spacing: ${props => props.$textspacing || 'normal'};
+`

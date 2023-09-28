@@ -54,7 +54,7 @@ min-width: 350px;
 text-align: center;
 `
 export const Title = styled.h2`
-color:  ${({ theme }) => theme.textColor};
+color:  ${({ theme }) => theme.itextColor};
 `
 export const Stroke = styled.div`
 width: 70%;

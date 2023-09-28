@@ -14,9 +14,13 @@ export const Buttonn = styled(Link)`
   cursor: pointer;
   z-index: 200;
   
+  &:focus {
+    outline: none;
+  }
+
   &:hover {
     transition: background-color .5s ease;
     background-color: ${variables.titleColor};
     color: ${variables.secondColor};
-  }
+  };
 `;

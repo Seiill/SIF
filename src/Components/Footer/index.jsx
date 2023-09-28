@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import {withTranslation} from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+
 import  icon1 from '../../assets/IMGS/insta.svg'
 import  icon2 from '../../assets/IMGS/face.svg'
 import  icon3 from '../../assets/IMGS/linked.svg'
@@ -6,13 +9,19 @@ import  icon4 from '../../assets/IMGS/location.svg'
 import  icon5 from '../../assets/IMGS/phone.svg'
 import  icon6 from '../../assets/IMGS/mobile.svg'
 import  icon7 from '../../assets/IMGS/maiill.svg'
+import {footerItems} from '../../Util/es.json'
+import {footerItemsEn} from '../../Util/en.json'
+
 import { FooterContainer, Container, IconImage, SocialContainer, Title, IconContainer, Icon , Important, LinksContainer, ContactContainer, ContactItems,InfoWrap, Links, Desc } from './footerElements'
 const Footer = () => {
+    const {t, i18n } = useTranslation();
+    const currentLanguage = i18n.language;
+    const data = currentLanguage === 'es' ? footerItems : footerItemsEn;
   return (
     <FooterContainer>
     <Container>
         <SocialContainer>
-            <Title>Visitanos</Title>
+            <Title>{t(data.socialTitle)}</Title>
             <IconContainer>
                 <Icon target="_blank" rel="noopener noreferrer" to ="https://www.instagram.com/findesin.fundacion/"><IconImage src={icon1} /></Icon> 
                 <Icon target="_blank" rel="noopener noreferrer" to ="https://www.instagram.com/findesin.fundacion/"><IconImage src={icon2} /></Icon> 
@@ -21,13 +30,13 @@ const Footer = () => {
         </SocialContainer>
         <Important>
             <LinksContainer>
-            <Links to="/privacyPolicy">Políticas de privacidad</Links>
-            <Links to="/termsConditions">Terminos y condiciones</Links>
+            <Links to="/privacyPolicy">{t(data.policy)}</Links>
+            <Links to="/termsConditions">{t(data.terms)}</Links>
             </LinksContainer>
             <LinksContainer>
-            <Links to="/nosotros">Nosotros</Links>
-            <Links to="/programas">Programas</Links>
-            <Links to="/Histories">Historias</Links>
+            <Links to="/nosotros">{t(data.aboutUs)}</Links>
+            <Links to="/programas">{t(data.programs)}</Links>
+            <Links to="/Histories">{t(data.stories)}</Links>
             </LinksContainer>
 
         </Important>
@@ -35,28 +44,28 @@ const Footer = () => {
             <ContactItems>
             <Icon target="/"><IconImage src={icon4} /></Icon>               
                 <InfoWrap>
-                <Title>Dirección</Title>
+                <Title>{t(data.addres)}</Title>
                 <Desc>Cll 53 # 74A - 29</Desc>
                 </InfoWrap>
             </ContactItems>
             <ContactItems>
             <Icon target="/"><IconImage src={icon5} /></Icon>                
                 <InfoWrap>
-                <Title>Teléfono</Title>
+                <Title>{t(data.phone)}</Title>
                 <Desc>+601 2634531</Desc>
                 </InfoWrap>
             </ContactItems>
             <ContactItems>
             <Icon target="_blank" rel="noopener noreferrer" to ="/"><IconImage src={icon6} /></Icon>                
             <InfoWrap>
-                <Title>Celular</Title>
+                <Title>{t(data.mobile)}</Title>
                 <Desc>+57 123456789</Desc>
                 </InfoWrap>
             </ContactItems>
             <ContactItems>
             <Icon target="_blank" rel="noopener noreferrer" to ="/"><IconImage src={icon7} /></Icon>                
             <InfoWrap>
-                <Title>Email</Title>
+                <Title>{t(data.email)}</Title>
                 <Desc>info@sif.com</Desc>
                 </InfoWrap>
             </ContactItems>
@@ -67,4 +76,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default withTranslation()(Footer);

@@ -3,7 +3,7 @@ import { variables } from '../../Util/themeModes';
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+  flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
   align-items: center;
   padding: 20px;
 `;

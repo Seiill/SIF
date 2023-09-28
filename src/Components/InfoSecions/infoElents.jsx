@@ -75,7 +75,7 @@ color: ${({ theme }) => theme.itextColor};
 export const Icon = styled.img`
 width: 50px;
 height:0;
-animation: ${({ visible }) => (visible ? heightAnimation : 'none')} 2s ease-in-out;
+animation: ${({ $visible }) => ($visible ? heightAnimation : 'none')} 2s ease-in-out;
 animation-fill-mode: forwards;
 `
 export const Stroke= styled.div`
@@ -83,7 +83,7 @@ width: 0%;
 height: 2px;
 background-color: ${({ theme }) => theme.title};
 margin-top: 10px;
-animation: ${({ visible }) => (visible ? appearAnimation : 'none')} 2s ease-in-out;
+animation: ${({ $visible }) => ($visible ? appearAnimation : 'none')} 2s ease-in-out;
 animation-fill-mode: forwards;
 `
 
@@ -136,7 +136,7 @@ margin-left: 10px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-animation: ${({ visible }) => (visible ? textContAnimation : 'none')} 3s ease-in-out 1;
+animation: ${({ $visible }) => ($visible ? textContAnimation : 'none')} 3s ease-in-out 1;
 animation-fill-mode: forwards;
 padding: 0 0 30px 0;
 
@@ -154,6 +154,6 @@ export const Shape = styled.div`
 width: 4px;
 height: 700px; 
 background-color: ${variables.titleColor};
-animation: ${({ visible }) => (visible ? heightAnimationShape : 'none')} 2s ease-in-out 1;
+animation: ${({ $visible }) => ($visible ? heightAnimationShape : 'none')} 2s ease-in-out 1;
 animation-fill-mode: forwards;
 `
