@@ -1,59 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
+import axios from 'axios';
 import { useCart } from '../CartContext';
 import { RiDeleteBin6Line } from 'react-icons/ri';
-import { Wrapper, FeaturedCart, AmountContainer,ItemsFeatured, NameProduct, Price, Unity, Subtotal, Remove, Add, Quantity, BuyButton, Form, Total } from './cartElements';
+import { Wrapper, FeaturedCart, AmountContainer, ItemsFeatured, NameProduct, Price, Unity, Subtotal, Remove, Add, Quantity, BuyButton, Form, Total } from './cartElements';
 import { Main } from '../mainElements';
 
 const ShoppingCart = () => {
   const { cartValue, removeFromCart, subtractFromCart, addToCart, totalPrice } = useCart();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    // Agrega otros campos necesarios para tu formulario
-  });
 
-  if (!cartValue) {
-    return <div>Loading cart...</div>;
-  }
+  const [preferenceId, setPreferenceId] = useState(null);
 
-  const handleSubtractClick = (productId) => {
-    subtractFromCart(productId);
+  useEffect(() => {
+    initMercadoPago('TEST-ec9e02f3-d42c-4a74-82ea-1814e9f2aca1'); // Reemplaza 'TU_PUBLIC_KEY_DE_MERCADOPAGO' con tu clave pública
+  }, []);
+
+  const getProductDescriptions = () => {
+    return cartValue.map((product) => product.title).join(', ');
   };
 
-  const handleAddClick = (product) => {
-    addToCart(product);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes enviar los datos al backend usando una solicitud fetch o Axios
-    const dataToSend = {
-      ...formData,
-      cart: cartValue,
-      totalPrice: totalPrice,
-    };
-
-    // Ejemplo de cómo enviar los datos usando fetch:
-    fetch('/tu-endpoint-de-backend', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(dataToSend),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Manejar la respuesta del backend si es necesario
-        console.log('Respuesta del backend:', data);
-      })
-      .catch((error) => {
-        console.error('Error al enviar datos al backend:', error);
+  const createPreference = async () => {
+    try {
+      const response = await axios.post('http://localhost:8080/create-preference', {
+        description: getProductDescriptions(),
+        price: totalPrice,
+        quantity: cartValue.length,
       });
+      const { id } = response.data;
+      return id;
+    } catch (error) {
+      console.log(error);
+    }
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleBuy = async () => {
+    const id = await createPreference();
+    if (id) {
+      setPreferenceId(id);
+    }
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    try {
+      const response = await axios.post('http://localhost:8080/procesar-formulario', {
+        name,
+        email,
+      });
+      
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+    }
   };
 
   return (
@@ -71,22 +71,25 @@ const ShoppingCart = () => {
               <span>{product.title}</span>
               <span>${parseFloat(product.price)}</span>
               <AmountContainer>
-                <Remove onClick={() => handleSubtractClick(product.id)}>-</Remove>
+                <Remove onClick={() => subtractFromCart(product.id)}>-</Remove>
                 <Quantity>{product.quantity} UND</Quantity>
-                <Add onClick={() => handleAddClick(product)}>+</Add>
+                <Add onClick={() => addToCart(product)}>+</Add>
               </AmountContainer>
               <span>${parseFloat(product.price) * product.quantity}</span>
               <RiDeleteBin6Line fontSize="24px" color='#f5a261' onClick={() => removeFromCart(product.id)} />
             </FeaturedCart>
           ))}
-
           <Total>Total: ${parseFloat(totalPrice)}</Total>
         </Wrapper>
-        <Total><BuyButton type="submit">Comprar</BuyButton></Total>
+        <Total>
+          <BuyButton onClick={handleBuy} type="button">
+            Comprar
+          </BuyButton>
+        </Total>
+        {preferenceId && <Wallet initialization={{ preferenceId }} />}
       </Form>
     </Main>
   );
 };
 
 export default ShoppingCart;
-
