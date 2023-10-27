@@ -1,8 +1,11 @@
 import { styled } from "styled-components";
 import { variables } from '../../Util/themeModes';
 import { Link } from 'react-router-dom';
+import { mobile } from "../../responsive";
 export const FooterContainer = styled.footer`
 width: 100%;
+max-width: 1280px;
+margin: auto;
 `
 export const Container = styled.div`
 
@@ -11,12 +14,19 @@ width: 100%;
 justify-content: space-around;
 flex-direction:row;
 flex-wrap: wrap;
-background-color:  ${({ theme }) => theme.itextColor};
+background-color:  ${({ theme }) => theme.bg};
+${mobile({
+    flexDirection: "column",
+})}
 `
 export const SocialContainer = styled.div`
 width: 30%;
 display: flex; 
 flex-direction: column;
+${mobile({
+    width: "90%",
+    margin: "10px",
+})}
 `
 export const Title = styled.h2`
 font-size: ${variables.smallFont};
@@ -43,6 +53,10 @@ export const Important = styled.div`
 width: 30%;
 display: flex;
 flex-direction: column;
+${mobile({
+    width: "90%",
+    margin: "10px",
+})}
 
 
 `
@@ -60,6 +74,10 @@ cursor: pointer;
 `
 export const ContactContainer = styled.div`
 width: 30%;
+${mobile({
+    width: "90%",
+    margin: "10px",
+})}
 `
 export const Desc = styled(Link)`
 color:  ${({ theme }) => theme.textColor};

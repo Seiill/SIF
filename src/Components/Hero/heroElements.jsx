@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import {variables} from '../../Util/themeModes'
-
+import { mobile, tablet } from '../../responsive';
 export const Container = styled.div`
-  width: 100%;
+  max-width: 1280px;
   margin: auto;
   height: 100vh;
   position: relative;
@@ -19,6 +19,7 @@ export const Container = styled.div`
     background-color: ${variables.bg};
     z-index: 1;
   }
+  ${mobile({width: "100%"})}
 `;
 
 
@@ -27,13 +28,33 @@ export const ImgOne = styled.img`
   top: 170px;
   left: 378px;
   z-index: 2;
+  ${mobile({
+  top: "180px",
+  left: "80px",
+  height: "100%"
+})}
+  ${tablet({
+  top: "157px",
+  left: "217px",
+  height: "100%"
+})}
 `;
 
 export const ImgTwo = styled.img`
-  width: 107%; 
+  width: 100%; 
   position: absolute;
   z-index: 3;
   top: -50px;
+  ${mobile({
+    height: "100%",
+    width: "auto",
+    top: "60px",
+    marginLeft: "-260px",
+  })};
+  ${tablet({
+    objectFit: "cover",
+    height: "100%"
+  })}
 `;
 
 export const ImgThree = styled.img`
@@ -41,6 +62,14 @@ width: 124%;
 position: absolute;
 top: -60px;
 z-index: 5;
+${mobile({
+  height: "100%",
+    width:" auto",
+    top: "50px",
+})}
+${tablet({
+  height: "100%",
+})}
 `;
 
 export const Image = styled.img`
@@ -49,6 +78,20 @@ width: 773px;
 bottom: -71px;
 left: 552px;
 z-index: 4;
+${mobile({
+  position: "absolute",
+  width:" 486px",
+  bottom: "-62px",
+  left: "-55px",
+  zIndex: "4",
+})}
+${tablet({
+  position: "absolute",
+  width: "819px",
+  bottom:" 19px",
+  left: "-22px",
+  zIndex: "4",
+})}
 `;
 
 export const TextContainer = styled.div`
@@ -57,6 +100,15 @@ top: 250px;
 position: relative;
 margin-left: 50px;
 z-index: 5;
+${mobile({
+  marginLeft: "20px",
+  width: "100%",
+  top: "200px"
+})};
+${tablet({
+  width: "80%",
+  top: "180px"
+})}
 `
 
 export const Text = styled.h1`
@@ -64,12 +116,27 @@ export const Text = styled.h1`
   color: ${({ theme }) => theme.textColor};
   font-size: ${variables.mediumFont};
   letter-spacing: 3.5px;
+
+  ${mobile({
+    textWrap: "wrap",
+    fontSize: "28px",
+    letterSpacing: "normal"})}
+  ${tablet({
+    textWrap: "wrap",
+    fontSize: "2rem",
+    letterSpacing: "normal"})}
 `;
 
 export const SpanText = styled.span`
   font-size: ${variables.bigFont}; 
   color:  ${({ theme }) => theme.title};
+  ${mobile({letterSpacing: "normal",
+    fontSize: "2.8rem"})}
+  ${tablet({letterSpacing: "normal",
+    fontSize: "3.8rem"})}
 `;
 export const SpanOption = styled.span`
 letter-spacing: ${props => props.$textspacing || 'normal'};
+${mobile({letterSpacing: "normal",
+fontSize: "1.4rem"})}
 `

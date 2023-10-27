@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import { variables } from '../../Util/themeModes';
 import styled, { css } from 'styled-components';
-
+import { mobile, tablet } from '../../responsive';
 export const Nav = styled.nav`
 background-color: ${({ theme }) => theme.bg};
 color: ${(props) => (props.$isTransparent ? 'white' : 'black')};
-
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -13,7 +12,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
-width: 1280px;
+max-width: 1280px;
 margin: auto;
 transition: background-color 0.3s;
 z-index: 10;
@@ -22,6 +21,18 @@ z-index: 10;
   flex-direction: column;
   position: ${(props) => (props.$isTransparent ? 'absolute' : 'fixed')};
 }
+${mobile({
+  maxWidth: "380px",
+  height: "80px", 
+flexDirection:"row",
+justifyContent:" space-evenly"
+})}
+${tablet({
+  maxWidth: "768px",
+  height: "80px", 
+flexDirection:"row",
+justifyContent:" space-evenly"
+})}
 `;
 
 export const NavLogo = styled(Link)`
@@ -108,5 +119,18 @@ display: flex;
 align-items: center;
 flex-wrap: wrap;
 justify-content: space-evenly;
+${mobile({
+  flexDirection: "row",
+    flexWrap: "nowrap",
+    width: "50%"
+ })};
+${tablet({
+  flexDirection: "row",
+    flexWrap: "nowrap",
+    width: "50%"
+ })};
+ 
+ 
+
 }
 `

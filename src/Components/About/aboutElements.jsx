@@ -2,11 +2,17 @@ import { styled } from "styled-components";
 import { variables } from "../../Util/themeModes";
 import { Link } from "react-router-dom";
 import imgs from '../../assets/IMGS/aboutBanner.jpg'
+import { mobile } from "../../responsive";
 export const ParallaxWrapper = styled.div`
   position: relative;
   overflow: hidden;
   height: 800px;
   background-color: rgba(0, 0, 0, 0.7);
+  max-width: 1280px;
+
+  ${mobile({
+    width: "100%",
+  })}
   `;
 
 export const ParallaxBackground = styled.div`
@@ -19,7 +25,7 @@ export const ParallaxBackground = styled.div`
   background-size: cover;
   background-position: center;
   z-index: -1;
-  transform: translateY(${(props) => props.offset * 0.5}px); /* Ajusta el valor para el efecto de parallax */
+  transform: translateY(${(props) => props.offset * 0.5}px); 
 `;
 
 export const ParallaxContent = styled.div`
@@ -35,6 +41,10 @@ export const ParallaxContent = styled.div`
 
 export const Section = styled.section`
 width: 100%;
+${mobile({
+  flexDirection: "Column",
+
+})}
 
 `
 export const Container = styled.div`
@@ -45,6 +55,11 @@ width: 100%;
 flex-wrap: wrap;
 padding: 20px 0;
 margin: auto;
+${mobile({
+  width: "90%",
+
+})}
+
 `
 export const CardContend = styled.div`
 width: 30%;
@@ -52,6 +67,10 @@ background-color:  ${({ theme }) => theme.card};
 border-radius: 30px;
 min-width: 350px;
 text-align: center;
+${mobile({
+  width: "100%",
+  marginBottom: "20px",
+})}
 `
 export const Title = styled.h2`
 color:  ${({ theme }) => theme.itextColor};

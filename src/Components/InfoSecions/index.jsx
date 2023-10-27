@@ -12,16 +12,16 @@ import imagess from '../../assets/IMGS/imageDesc.jpg'
 import { sixfeatured, feteauredCauses, changingLifes, infoItems} from '../../Util/es.json'
 import { sixfeaturedEn, feteauredCausesEn, changingLifesEn, infoItemsEn} from '../../Util/en.json'
 
-import restauracionImage from '../../Assets/IMGS/restauracion.svg';
-import orientacionImage from '../../Assets/IMGS/orientacion.svg';
-import transformacionImage from '../../Assets/IMGS/Transformacion.svg';
-import liderazgoImage from '../../Assets/IMGS/liderazgo.svg';
-import educacionImage from '../../Assets/IMGS/educacion.svg';
-import compromisoImage from '../../Assets/IMGS/compromiso.svg';
+import restauracionImage from '../../assets/IMGS/restauracion.svg';
+import orientacionImage from '../../assets/IMGS/orientacion.svg';
+import transformacionImage from '../../assets/IMGS/Transformacion.svg';
+import liderazgoImage from '../../assets/IMGS/liderazgo.svg';
+import educacionImage from '../../assets/IMGS/educacion.svg';
+import compromisoImage from '../../assets/IMGS/compromiso.svg';
 
-import infoImage1 from '../../Assets/IMGS/transformadores.jpg';
-import infoImage2 from '../../Assets/IMGS/unidadFamiliar.jpg';
-import infoImage3 from '../../Assets/IMGS/empoderados.jpg';
+import infoImage1 from '../../assets/IMGS/transformadores.jpg';
+import infoImage2 from '../../assets/IMGS/unidadFamiliar.jpg';
+import infoImage3 from '../../assets/IMGS/empoderados.jpg';
 
 const data = i18n.language === 'es' ? { sixfeatured, feteauredCauses, changingLifes, infoItems } : { sixfeatured: sixfeaturedEn, feteauredCauses: feteauredCausesEn, changingLifes: changingLifesEn, infoItems: infoItemsEn };
 
