@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../../Components/Button/Button';
 import { Container,  ImageColumn, Image, ContentColumn, Title, Description} from './elements'
-import columnImage1 from '../../Assets/IMGS/sinlucro.jpeg';
-import columnImage2 from '../../Assets/IMGS/forte.jpeg';
-import columnImage3 from '../../Assets/IMGS/unete.jpeg';
+import columnImage1 from '../../assets/IMGS/sinlucro.jpeg';
+import columnImage2 from '../../assets/IMGS/forte.jpeg';
+import columnImage3 from '../../assets/IMGS/unete.jpeg';
 const loadImage = (imageName) => {
   switch (imageName) {
     case 'sinlucro.jpeg':

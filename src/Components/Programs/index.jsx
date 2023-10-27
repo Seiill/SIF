@@ -7,10 +7,10 @@ import {programsC, programsDonation } from '../../Util/es.json';
 import {programsCEn, programsDonationEn } from '../../Util/en.json';
 import {Main} from '../mainElements'
 
-import pd1 from "../../Assets/IMGS/pD1.jpeg";
-import pd2 from "../../Assets/IMGS/pD2.jpg";  
-import pd3 from "../../Assets/IMGS/pD3.jpeg"; 
-import pd4 from '../../Assets/IMGS/pD4.jpeg';
+import pd1 from "../../assets/IMGS/pD1.jpeg";
+import pd2 from "../../assets/IMGS/pD2.jpg";  
+import pd3 from "../../assets/IMGS/pD3.jpeg"; 
+import pd4 from '../../assets/IMGS/pD4.jpeg';
 const Programas = ({ t }) => {
   const { i18n} = useTranslation();
   const currentLanguage = i18n.language;
