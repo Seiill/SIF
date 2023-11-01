@@ -2,11 +2,15 @@ import { styled } from "styled-components";
 import { variables } from "../../Util/themeModes";
 import imgs from '../../assets/IMGS/programParallax.jpg'
 import imgs2 from '../../assets/IMGS/programParallax.jpg'
+import { mobile, tablet } from "../../responsive";
 export const ParallaxWrapper = styled.div`
   position: relative;
   overflow: hidden;
   height: 800px;
   background-color: rgba(0, 0, 0, 0.7);
+  ${mobile, tablet({
+    height: "100vh"
+  })}
   `;
 
 export const ParallaxBackground = styled.div`
@@ -44,6 +48,10 @@ flex-direction: row;
 justify-content: space-evenly;
 padding: 50px 0;
 row-gap: 30px;
+${mobile, tablet({
+  flexDirection:"column",
+  rowGap: "100px"
+})}
 `
 export const CardContainer = styled.div`
 display: flex;
@@ -54,6 +62,10 @@ background-color: ${({ theme }) => theme.card};
 padding: ${variables.smallFont};
 justify-content: space-between;
 border-radius: 20px;
+${mobile, tablet({
+  width: "90%",
+  margin: "auto"
+})}
 `
 
 export const Imgs = styled.img`

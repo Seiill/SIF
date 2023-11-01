@@ -23,6 +23,8 @@ import infoImage1 from '../../assets/IMGS/transformadores.jpg';
 import infoImage2 from '../../assets/IMGS/unidadFamiliar.jpg';
 import infoImage3 from '../../assets/IMGS/empoderados.jpg';
 
+
+
 const data = i18n.language === 'es' ? { sixfeatured, feteauredCauses, changingLifes, infoItems } : { sixfeatured: sixfeaturedEn, feteauredCauses: feteauredCausesEn, changingLifes: changingLifesEn, infoItems: infoItemsEn };
 
 const InfoSection = ({ t }) => {
@@ -130,8 +132,6 @@ const InfoSection = ({ t }) => {
           <Descr>{t(item.description)}</Descr>
           <Button title={t(item.action)} path="/coffe-gif"/>
         </TextContent>
-        
-
           ))}
 
       </TextContainer>

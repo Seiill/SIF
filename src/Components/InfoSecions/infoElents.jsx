@@ -46,6 +46,9 @@ border-radius: 30px;
 ${mobile({
   flexDirection: "column",
     width: "90%",})}
+${tablet({
+  width: "90%",
+})}
 `
 export const Containerr = styled.div`
 display: flex;
@@ -58,7 +61,10 @@ align-items: center;
 ${mobile({
   width: "90%",
   flexDirection: "column"
-
+})}
+${tablet({
+  width: "100%",
+  flexDirection:"column",
 })}
 `
 
@@ -83,6 +89,9 @@ color: ${({ theme }) => theme.itextColor};
 ${mobile({
   width: "100%",
   padding: "20px 0"
+})}
+${tablet({
+  width: "60%",
 })}
 `
 export const Icon = styled.img`
@@ -130,6 +139,10 @@ margin-left: 0;
 ${mobile({
   width: "100%",
 })}
+${tablet({
+  width: "90%",
+  margin: "auto"
+})}
 ` 
 export const ImageDesc = styled.img`
 width: 100%;
@@ -141,6 +154,11 @@ ${mobile({
   height: "auto",
   borderRadius: "30px"
 })}
+${tablet({
+  width: "100%",
+  height: "auto",
+  borderRadius: "0px"
+})}
 `
 export const TextContainer = styled.div`
 width: 45%;
@@ -148,6 +166,11 @@ display: flex;
 flex-direction: column;
 ${mobile({
   width: "100%",
+  textWrap: "wrap",
+  paddingBottom: "5px",
+})}
+${tablet({
+  width: "90%",
   textWrap: "wrap",
   paddingBottom: "5px",
 })}
@@ -188,6 +211,12 @@ background-color: ${variables.titleColor};
 animation: ${({ $visible }) => ($visible ? heightAnimationShape : 'none')} .5s ease-in-out 1;
 animation-fill-mode: forwards;
 ${mobile({
+  marginTop: "20px",
+  width: "80%",
+  height: "4px",
+  animation: "none",
+})}
+${tablet({
   marginTop: "20px",
   width: "80%",
   height: "4px",

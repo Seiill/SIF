@@ -117,23 +117,25 @@ export const Text = styled.h1`
   font-size: ${variables.mediumFont};
   letter-spacing: 3.5px;
 
-  ${mobile({
-    textWrap: "wrap",
-    fontSize: "28px",
-    letterSpacing: "normal"})}
+  
   ${tablet({
     textWrap: "wrap",
     fontSize: "2rem",
     letterSpacing: "normal"})}
+    ${mobile({
+      textWrap: "wrap",
+      fontSize: "28px",
+      letterSpacing: "normal"})}
 `;
 
 export const SpanText = styled.span`
   font-size: ${variables.bigFont}; 
   color:  ${({ theme }) => theme.title};
-  ${mobile({letterSpacing: "normal",
-    fontSize: "2.8rem"})}
+  
   ${tablet({letterSpacing: "normal",
     fontSize: "3.8rem"})}
+  ${mobile({letterSpacing: "normal",
+    fontSize: "2.8rem"})}
 `;
 export const SpanOption = styled.span`
 letter-spacing: ${props => props.$textspacing || 'normal'};

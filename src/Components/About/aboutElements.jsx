@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { variables } from "../../Util/themeModes";
 import { Link } from "react-router-dom";
 import imgs from '../../assets/IMGS/aboutBanner.jpg'
-import { mobile } from "../../responsive";
+import { mobile, tablet } from "../../responsive";
 export const ParallaxWrapper = styled.div`
   position: relative;
   overflow: hidden;
@@ -10,7 +10,7 @@ export const ParallaxWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 1280px;
 
-  ${mobile({
+  ${mobile, tablet({
     width: "100%",
   })}
   `;
@@ -41,7 +41,7 @@ export const ParallaxContent = styled.div`
 
 export const Section = styled.section`
 width: 100%;
-${mobile({
+${mobile, tablet({
   flexDirection: "Column",
 
 })}
@@ -59,6 +59,10 @@ ${mobile({
   width: "90%",
 
 })}
+${tablet({
+  width: "90%",
+  rowGap: "30px"
+})}
 
 `
 export const CardContend = styled.div`
@@ -70,6 +74,9 @@ text-align: center;
 ${mobile({
   width: "100%",
   marginBottom: "20px",
+})}
+${tablet({
+  width: "65%",
 })}
 `
 export const Title = styled.h2`

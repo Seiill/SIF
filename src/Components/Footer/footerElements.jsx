@@ -1,11 +1,15 @@
 import { styled } from "styled-components";
 import { variables } from '../../Util/themeModes';
 import { Link } from 'react-router-dom';
-import { mobile } from "../../responsive";
+import { mobile, tablet } from "../../responsive";
 export const FooterContainer = styled.footer`
 width: 100%;
 max-width: 1280px;
 margin: auto;
+${tablet({
+    height: "90vh",
+    
+})}
 `
 export const Container = styled.div`
 
@@ -18,12 +22,16 @@ background-color:  ${({ theme }) => theme.bg};
 ${mobile({
     flexDirection: "column",
 })}
+${tablet({
+    flexDirection: "column",
+})}
 `
 export const SocialContainer = styled.div`
 width: 30%;
 display: flex; 
 flex-direction: column;
-${mobile({
+
+${tablet({
     width: "90%",
     margin: "10px",
 })}
@@ -53,7 +61,8 @@ export const Important = styled.div`
 width: 30%;
 display: flex;
 flex-direction: column;
-${mobile({
+
+${tablet({
     width: "90%",
     margin: "10px",
 })}
@@ -74,9 +83,11 @@ cursor: pointer;
 `
 export const ContactContainer = styled.div`
 width: 30%;
-${mobile({
+
+${tablet({
     width: "90%",
     margin: "10px",
+    paddingBottom: "50px",
 })}
 `
 export const Desc = styled(Link)`

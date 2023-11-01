@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { variables } from '../../Util/themeModes';
-import { mobile } from '../../responsive';
+import { mobile, tablet } from '../../responsive';
 export const Container = styled.div`
   display: flex;
   flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
   align-items: center;
   padding: 20px;
-  ${mobile({
+  ${mobile, tablet({
     flexDirection:'column-reverse',
   })}
 `;
@@ -22,7 +22,7 @@ export const Image = styled.img`
 export const ContentColumn = styled.div`
   flex: 1;
   padding: 0 20px;
-  ${mobile({
+  ${mobile, tablet({
     padding: "30px 0",
   })}
 `;
