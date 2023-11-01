@@ -39,8 +39,7 @@ function App() {
               <Route path="/aboutUs" element={<About />} />
               <Route path="/programs" element={<Programs />} />
               <Route path="/blog" element={<Blog />} />
-              <Route path="/coffe-gif" element={<Suspense fallback={<div>Cargando...</div>}><CoffeGif /></Suspense>}>
-              </Route>
+              <Route path="/coffe-gif" element={<Suspense fallback={<div>Cargando...</div>}><CoffeGif /></Suspense>} />
               <Route path="/cart" element={<Cart />} />
             </Routes>
             <Footer />

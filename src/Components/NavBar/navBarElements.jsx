@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { variables } from '../../Util/themeModes';
 import styled, { css } from 'styled-components';
 import { mobile, tablet } from '../../responsive';
+
 export const Nav = styled.nav`
 background-color: ${({ theme }) => theme.bg};
 color: ${(props) => (props.$isTransparent ? 'white' : 'black')};
@@ -19,7 +20,8 @@ z-index: 10;
 
 @media (max-width: 768px) {
   flex-direction: column;
-  position: ${(props) => (props.$isTransparent ? 'absolute' : 'fixed')};
+  position: fixed;
+  height auto;
 }
 ${mobile({
   maxWidth: "380px",
@@ -130,7 +132,4 @@ ${tablet({
     width: "50%"
  })};
  
- 
-
-}
 `

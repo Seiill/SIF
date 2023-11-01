@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next'; 
 import { useLocation } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ import euFlag from '../../assets/IMGS/EEUUflag.png'
 import {navItemsEs} from '../../Util/es.json'
 import {navItemsEn} from '../../Util/en.json';
 import ButtonCoffe from '../ButtonCoffe/ButtonCoffe';
+import Sidebar from '../SideBar';
 
 const Navbar = ({ toggleTheme, changeLanguage}) => {
   const { t, i18n } = useTranslation();
@@ -22,6 +23,12 @@ const Navbar = ({ toggleTheme, changeLanguage}) => {
       const [isTransparent, setTransparent] = useState(true);
       const [isEsSelected, setIsEsSelected] = useState(i18n.language === 'es');
       const location = useLocation(); 
+      const [selectedMenuItem, setSelectedMenuItem] = useState('home'); 
+      const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+      const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+      };
 
     
       const handleModeToggle = () => {
@@ -52,7 +59,7 @@ const Navbar = ({ toggleTheme, changeLanguage}) => {
         }
       }, [location.pathname, navItems]);
     
-      const [selectedMenuItem, setSelectedMenuItem] = useState('home');     
+          
 
       useEffect(() => {
         setIsEsSelected(i18n.language === 'es');
@@ -69,10 +76,15 @@ const Navbar = ({ toggleTheme, changeLanguage}) => {
         return (
           <Nav $isTransparent={isTransparent}>
       <NavLogo to="/"><Logo src={logo}/></NavLogo>
+      
       <NavMenu $isOpen={isMenuOpen}>
       {navItems.map((item, id) => (
-  <NavItem key={item.id} to={item.path} 
-    onClick={() => {setSelectedMenuItem(item.id); setMenuOpen(false);}}
+  <NavItem 
+  key={item.id} 
+  to={item.path} 
+  onClick={() => {
+    setSelectedMenuItem(item.id); 
+    setMenuOpen(false);}}
   $isSelected={selectedMenuItem === item.id}>
     {t(item.title)}
   </NavItem>
@@ -96,8 +108,8 @@ const Navbar = ({ toggleTheme, changeLanguage}) => {
       </ChangeLenguageContainer>
       < ButtonCoffe />
           </ChangesNav>
-          
-      <MenuIcon onClick={handleMenuToggle}>☰</MenuIcon>
+      <MenuIcon onClick={toggleSidebar}>☰</MenuIcon>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} navItems={navItems} t={t} />
     </Nav>
         );
       };
