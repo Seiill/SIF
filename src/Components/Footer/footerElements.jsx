@@ -19,10 +19,11 @@ justify-content: space-around;
 flex-direction:row;
 flex-wrap: wrap;
 background-color:  ${({ theme }) => theme.bg};
-${mobile({
+
+${tablet({
     flexDirection: "column",
 })}
-${tablet({
+${mobile({
     flexDirection: "column",
 })}
 `

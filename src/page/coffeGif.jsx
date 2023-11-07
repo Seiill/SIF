@@ -1,10 +1,12 @@
 import React from 'react';
 import CoffeDonated from '../Components/Donations/CoffeDonated';
+import ScrollToTop from '../Components/scrollTop/ScrollTop'
 const CoffeGif = () => {
   
   return (
     <>
-        <CoffeDonated />
+    <ScrollToTop/>
+    <CoffeDonated />
     </>
   );
 };

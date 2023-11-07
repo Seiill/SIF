@@ -1,6 +1,6 @@
 {
     "buttonEn":{
-        "title": "Donate",
+        "title": "Give",
         "title2": "Support"
       },
     "infoItemsEn":{"title":"Let's change lives."},
@@ -64,7 +64,7 @@
     "goalText":"Annual Impact:",
   "text": "Together, we can do it!",
   "desc":"Each of these programs has a specific fundraising goal to achieve its implementation and ensure that we can provide the necessary support to vulnerable children and youth. Your generosity and commitment to reaching these goals will enable us to continue making a significant difference in the lives of those we serve and contribute to the positive transformation of the community.",
-  "action": "Donate"
+  "action": "Give"
   },
   
   "sixfeaturedEn": [
@@ -198,7 +198,7 @@
       "image": "unete.jpeg",
       "title": "Join Our Cause",
       "description": "We invite you to join our mission of restoration and transformation. Every contribution, every act of solidarity, is a seed of hope that sows a brighter future for the young people we serve. Together, we can achieve profound change and make a difference in the lives of those who need it most. Your support is invaluable to us!",
-      "action":"Donate"
+      "action":"Give"
   },
   "misonVisionEn": [
       {
@@ -231,7 +231,7 @@
     ],
     "txtTitle": "Together, We Can Achieve It!",
     "txtDesc": "Discover how the heroes of SIF face their struggles and find the strength to triumph. Together, we can continue writing chapters of hope and build a future where every child has the opportunity to soar high and be the protagonist of their own epic journey. <strong>Learn more about the heroes of SIF and be a part of this powerful transformation!</strong>",
-    "action": "Donate"
+    "action": "Give"
     }
         
 }

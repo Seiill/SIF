@@ -6,7 +6,7 @@ export const Container = styled.div`
   flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
   align-items: center;
   padding: 20px;
-  ${mobile, tablet({
+  ${tablet, mobile({
     flexDirection:'column-reverse',
   })}
 `;
@@ -22,7 +22,7 @@ export const Image = styled.img`
 export const ContentColumn = styled.div`
   flex: 1;
   padding: 0 20px;
-  ${mobile, tablet({
+  ${tablet, mobile({
     padding: "30px 0",
   })}
 `;

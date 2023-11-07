@@ -1,6 +1,6 @@
  {
   "buttonEs":{
-    "title":"Donar",
+    "title":"Dar",
     "title2": "Apoyar"
   },
   "infoItems":{"title":"Cambiemos vidas."},
@@ -66,7 +66,7 @@
     
     "text": "¡Juntos, podemos lograrlo!",
     "desc":"Cada uno de estos programas tiene una meta de recaudación específica para lograr su implementación y asegurar que podamos brindar el apoyo necesario a los niños y jóvenes en situación de vulnerabilidad. Tu generosidad y compromiso en alcanzar estas metas nos permitirán seguir marcando una diferencia significativa en la vida de quienes atendemos y contribuir a la transformación positiva de la comunidad. ",
-    "action": "Donar"
+    "action": "Dar"
   },
     
     "sixfeatured": [
@@ -211,7 +211,7 @@
       "image": "unete.jpeg",
       "title": "Únete a Nuestra Causa",
       "description": "Te invitamos a unirte a nuestra misión de restauración y transformación. Cada contribución, cada acción solidaria, es una semilla de esperanza que siembra un futuro más brillante para los jóvenes que atendemos. Juntos, podemos lograr un cambio trascendental y marcar la diferencia en la vida de aquellos que más lo necesitan. ¡Tu apoyo es invaluable para nosotros!",
-      "action":"Donar"
+      "action":"Dar"
     },
     "misonVision": [
       {
@@ -244,7 +244,7 @@
       ],
       "txtTitle":"¡Juntos, podemos lograrlo!",
       "txtDesc":"Descubre cómo los héroes de SIF enfrentan sus luchas y encuentran la fuerza para triunfar. Juntos, podemos seguir escribiendo capítulos de esperanza y construir un futuro donde cada niño tenga la oportunidad de volar alto y ser protagonista de su propia epopeya. <strong>¡Conoce más acerca de los héroes de SIF y sé parte de esta poderosa transformación!</strong>",
-      "action": "Donar"
+      "action": "Dar"
       
   }}
   

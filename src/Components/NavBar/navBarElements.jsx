@@ -23,14 +23,15 @@ z-index: 10;
   position: fixed;
   height auto;
 }
-${mobile({
-  maxWidth: "380px",
+
+${tablet({
+  maxWidth: "768px",
   height: "80px", 
 flexDirection:"row",
 justifyContent:" space-evenly"
 })}
-${tablet({
-  maxWidth: "768px",
+${mobile({
+  maxWidth: "380px",
   height: "80px", 
 flexDirection:"row",
 justifyContent:" space-evenly"
@@ -121,15 +122,17 @@ display: flex;
 align-items: center;
 flex-wrap: wrap;
 justify-content: space-evenly;
-${mobile({
-  flexDirection: "row",
-    flexWrap: "nowrap",
-    width: "50%"
- })};
+
 ${tablet({
   flexDirection: "row",
     flexWrap: "nowrap",
     width: "50%"
- })};
+ })}
+
+ ${mobile({
+  flexDirection: "row",
+    flexWrap: "nowrap",
+    width: "50%"
+ })}
  
 `

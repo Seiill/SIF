@@ -10,7 +10,7 @@ export const ParallaxWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   max-width: 1280px;
 
-  ${mobile, tablet({
+  ${ tablet, mobile({
     width: "100%",
   })}
   `;
@@ -41,7 +41,7 @@ export const ParallaxContent = styled.div`
 
 export const Section = styled.section`
 width: 100%;
-${mobile, tablet({
+${tablet, mobile({
   flexDirection: "Column",
 
 })}
@@ -55,13 +55,14 @@ width: 100%;
 flex-wrap: wrap;
 padding: 20px 0;
 margin: auto;
-${mobile({
-  width: "90%",
 
-})}
 ${tablet({
   width: "90%",
   rowGap: "30px"
+})}
+${mobile({
+  width: "90%",
+
 })}
 
 `
@@ -71,13 +72,16 @@ background-color:  ${({ theme }) => theme.card};
 border-radius: 30px;
 min-width: 350px;
 text-align: center;
+
+${tablet({
+  width: "65%",
+})}
+
 ${mobile({
   width: "100%",
   marginBottom: "20px",
 })}
-${tablet({
-  width: "65%",
-})}
+
 `
 export const Title = styled.h2`
 color:  ${({ theme }) => theme.itextColor};

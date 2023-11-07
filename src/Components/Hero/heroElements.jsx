@@ -28,14 +28,16 @@ export const ImgOne = styled.img`
   top: 170px;
   left: 378px;
   z-index: 2;
-  ${mobile({
-  top: "180px",
-  left: "80px",
-  height: "100%"
-})}
+  
   ${tablet({
   top: "157px",
   left: "217px",
+  height: "100%"
+})}
+
+${mobile({
+  top: "180px",
+  left: "80px",
   height: "100%"
 })}
 `;
@@ -45,15 +47,17 @@ export const ImgTwo = styled.img`
   position: absolute;
   z-index: 3;
   top: -50px;
+  
+  ${tablet({
+    objectFit: "cover",
+    height: "100%"
+  })}
+
   ${mobile({
     height: "100%",
     width: "auto",
     top: "60px",
     marginLeft: "-260px",
-  })};
-  ${tablet({
-    objectFit: "cover",
-    height: "100%"
   })}
 `;
 
@@ -62,13 +66,15 @@ width: 124%;
 position: absolute;
 top: -60px;
 z-index: 5;
+
+${tablet({
+  height: "100%",
+})}
+
 ${mobile({
   height: "100%",
     width:" auto",
     top: "50px",
-})}
-${tablet({
-  height: "100%",
 })}
 `;
 
@@ -78,18 +84,20 @@ width: 773px;
 bottom: -71px;
 left: 552px;
 z-index: 4;
-${mobile({
-  position: "absolute",
-  width:" 486px",
-  bottom: "-62px",
-  left: "-55px",
-  zIndex: "4",
-})}
+
 ${tablet({
   position: "absolute",
   width: "819px",
   bottom:" 19px",
   left: "-22px",
+  zIndex: "4",
+})}
+
+${mobile({
+  position: "absolute",
+  width:" 486px",
+  bottom: "-62px",
+  left: "-55px",
   zIndex: "4",
 })}
 `;
@@ -100,14 +108,16 @@ top: 250px;
 position: relative;
 margin-left: 50px;
 z-index: 5;
+
+${tablet({
+  width: "80%",
+  top: "180px"
+})}
+
 ${mobile({
   marginLeft: "20px",
   width: "100%",
   top: "200px"
-})};
-${tablet({
-  width: "80%",
-  top: "180px"
 })}
 `
 

@@ -9,13 +9,13 @@ width: 100%;
     align-items: center;
     justify-content: space-around;
     padding: 40px 0;
-    ${mobile, tablet({
+    ${tablet({
         flexDirection: "column",
     })}
 `
 export const Article = styled.article`
 width: 40%;
-${mobile, tablet({
+${tablet({
     width: "90%",
   })}
 `
@@ -25,7 +25,7 @@ color: ${({ theme }) => theme.textColor};
 `
 export const ImageWrapper = styled. div`
 width: 40%;
-${mobile, tablet({
+${tablet({
     width: "90%",
   })}
 `

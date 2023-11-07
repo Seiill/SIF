@@ -43,12 +43,14 @@ flex-wrap: wrap;
 justify-content: space-around;
 background-color: ${({ theme }) => theme.card};
 border-radius: 30px;
-${mobile({
-  flexDirection: "column",
-    width: "90%",})}
+
 ${tablet({
   width: "90%",
 })}
+
+${mobile({
+  flexDirection: "column",
+    width: "90%",})}
 `
 export const Containerr = styled.div`
 display: flex;
@@ -58,13 +60,13 @@ margin: auto;
 justify-content: space-between;
 align-items: center;
 
-${mobile({
-  width: "90%",
-  flexDirection: "column"
-})}
 ${tablet({
   width: "100%",
   flexDirection:"column",
+})}
+${mobile({
+  width: "90%",
+  flexDirection: "column"
 })}
 `
 
@@ -86,19 +88,25 @@ text-align: center;
 flex-direction: column;
 align-items: center;
 color: ${({ theme }) => theme.itextColor};
+
+
+${tablet({
+  width: "60%",
+})}
 ${mobile({
   width: "100%",
   padding: "20px 0"
 })}
-${tablet({
-  width: "60%",
-})}
 `
 export const Icon = styled.img`
 width: 50px;
-height:0;
-animation: ${({ $visible }) => ($visible ? heightAnimation : 'none')} .8s ease-in-out;
-animation-fill-mode: forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s ease-in-out;
+
+  ${({ $visible }) => $visible && `
+    transform: scaleX(1);
+  `}
 `
 export const Stroke= styled.div`
 width: 0%;
@@ -136,12 +144,14 @@ ${mobile(
 export const ImageContent = styled.div`
 width: 45%;
 margin-left: 0;
-${mobile({
-  width: "100%",
-})}
+
 ${tablet({
   width: "90%",
   margin: "auto"
+})}
+
+${mobile({
+  width: "100%",
 })}
 ` 
 export const ImageDesc = styled.img`
@@ -149,32 +159,34 @@ width: 100%;
 height: 800px;
 object-fit: cover;
 border-radius: 0 30px 30px 0;
-${mobile({
-  width: "100%",
-  height: "auto",
-  borderRadius: "30px"
-})}
+
 ${tablet({
   width: "100%",
   height: "auto",
   borderRadius: "0px"
+})}
+
+${mobile({
+  width: "100%",
+  height: "auto",
+  borderRadius: "30px"
 })}
 `
 export const TextContainer = styled.div`
 width: 45%;
 display: flex;
 flex-direction: column;
-${mobile({
-  width: "100%",
-  textWrap: "wrap",
-  paddingBottom: "5px",
-})}
+
 ${tablet({
   width: "90%",
   textWrap: "wrap",
   paddingBottom: "5px",
 })}
-
+${mobile({
+  width: "100%",
+  textWrap: "wrap",
+  paddingBottom: "5px",
+})}
 `
 const textContAnimation = keyframes`
 0% {
@@ -210,13 +222,14 @@ height: 700px;
 background-color: ${variables.titleColor};
 animation: ${({ $visible }) => ($visible ? heightAnimationShape : 'none')} .5s ease-in-out 1;
 animation-fill-mode: forwards;
-${mobile({
+
+${tablet({
   marginTop: "20px",
   width: "80%",
   height: "4px",
   animation: "none",
 })}
-${tablet({
+${mobile({
   marginTop: "20px",
   width: "80%",
   height: "4px",
